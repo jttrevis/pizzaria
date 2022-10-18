@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import pizzaBG from '../../assets/pizzas.jpg'
-import pizzaBG02 from '../../assets/pizzaBG6.jpg'
+import pizzaBG02 from '../../assets/pizzaMobile.jpg'
 
 
 export const Container = styled.header`
@@ -15,8 +15,9 @@ export const Container = styled.header`
 
   @media (max-width: 640px){
     background-image: url(${pizzaBG02});
-    background-size: cover;
-    max-width: 100vh;
+
+    background-repeat: no-repeat;
+
   }
 `;
 

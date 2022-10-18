@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 
+
 }
 
 
@@ -27,6 +28,7 @@ button {
 
 body{
   -webkit-font-smoothing: antialiased;
+
 
 }
 
