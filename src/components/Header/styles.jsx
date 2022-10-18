@@ -76,7 +76,7 @@ export const Content = styled.div`
 
   }
 
-  @media (max-width: 500px){
+  @media (max-width: 950px){
     ul {
       display: flex;
       flex-direction: column;

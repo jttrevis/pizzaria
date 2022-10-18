@@ -48,7 +48,7 @@ export const Content = styled.div`
 
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 640px) {
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
     gap: 3rem;
