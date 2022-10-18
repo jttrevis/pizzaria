@@ -7,7 +7,7 @@ export const Main = () => {
     <Container>
       <Content>
         <img alt="pizzaphoto" src={pizzaMain}></img>
-        <div>
+        <div id='main'>
           <span>Only Today!</span>
           <p>Large Pizza + 2lt Coca-Cola</p>
           <p>for only:</p>

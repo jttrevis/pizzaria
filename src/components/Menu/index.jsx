@@ -14,7 +14,7 @@ import { PizzaCard } from '../Card'
 
 export const  Menu = () => {
   return (
-    <Container>
+    <Container id='menu'>
       <div>
         <h3>Menu</h3>
       </div>
