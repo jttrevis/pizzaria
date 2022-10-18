@@ -73,6 +73,7 @@ export const Content = styled.div`
 
     button {
       width: 90%;
+      color: black;
     }
   }
 `
