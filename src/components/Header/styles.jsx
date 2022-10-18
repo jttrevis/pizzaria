@@ -13,10 +13,10 @@ export const Container = styled.header`
   width: 100%;
 
 
-  @media (max-width: 500px){
+  @media (max-width: 640px){
     background-image: url(${pizzaBG02});
     background-size: cover;
-    width: 100%;
+    max-width: 100vh;
   }
 `;
 

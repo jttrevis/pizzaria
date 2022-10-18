@@ -60,7 +60,7 @@ export const Content = styled.div`
     align-items: center;
 
     img {
-      width: 100%;
+      display: none;
     }
 
     span {
