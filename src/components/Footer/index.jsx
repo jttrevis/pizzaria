@@ -6,7 +6,7 @@ import facebookImg from '../../assets/facebook.png'
 import whatsappImg from '../../assets/whatsapp.png'
 
 
-export function Footer() {
+export const Footer = () => {
   return (
     <Container>
       <Content>

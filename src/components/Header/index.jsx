@@ -1,12 +1,12 @@
-import React from "react";
-import { Banner, Container, Content } from "./styles";
+import React from "react"
+import { Banner, Container, Content } from "./styles"
 
-import logoImg from '../../assets/logo-no-background.png';
-import cart from '../../assets/cart.png';
+import logoImg from '../../assets/logo-no-background.png'
+import cart from '../../assets/cart.png'
 
 
 
-export function Header() {
+export const  Header = () => {
   return (
     <Container>
       <Content>

@@ -1,8 +1,8 @@
-import React from "react";
-import { Container, Content } from "./styles";
+import React from "react"
+import { Container, Content } from "./styles"
 import pizzaMain from '../../assets/pizza2.jpg'
 
-export function Main() {
+export const Main = () => {
   return (
     <Container>
       <Content>

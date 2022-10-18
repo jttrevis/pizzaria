@@ -1,8 +1,8 @@
-import React from "react";
-import { Container, Content } from "./styles";
+import React from "react"
+import { Container, Content } from "./styles"
 
 
-export function Localization() {
+export const Localization = () => {
   return (
     <Container>
       <Content>

@@ -1,43 +1,60 @@
-import React from "react";
-import { Container, Content } from "./styles";
+import React from "react"
+import { Container, Content } from "./styles"
 
 
 
-import imgCard2 from '../../assets/pizza2.jpg';
-import imgCard3 from '../../assets/pizza3.jpg';
-import imgCard4 from '../../assets/pizza4.jpg';
-import imgCard5 from '../../assets/pizza5.jpg';
-import imgCard6 from '../../assets/pizza6.jpg';
-import imgCard7 from '../../assets/pizza7.jpg';
+import imgCard2 from '../../assets/pizza2.jpg'
+import imgCard3 from '../../assets/pizza3.jpg'
+import imgCard4 from '../../assets/pizza4.jpg'
+import imgCard5 from '../../assets/pizza5.jpg'
+import imgCard6 from '../../assets/pizza6.jpg'
+import imgCard7 from '../../assets/pizza7.jpg'
+import { PizzaCard } from '../Card'
 
 
-export function Menu() {
+export const  Menu = () => {
   return (
     <Container>
       <div>
         <h3>Menu</h3>
       </div>
-      <Content>
-        <div>
-          <img src={imgCard7} alt="pizzaCard" />
-        </div>
-        <div>
-          <img src={imgCard2} alt="pizzaCard" />
-        </div>
-        <div>
-          <img src={imgCard3} alt="pizzaCard" />
-        </div>
-        <div >
-          <img src={imgCard4} alt="pizzaCard" />
-        </div>
-        <div >
-          <img src={imgCard5} alt="pizzaCard" />
-        </div>
-        <div >
-          <img src={imgCard6} alt="pizzaCard" />
-        </div>
+    <Content>
+          <PizzaCard
+            image={imgCard7}
+            title="Chicken & Cheese"
 
-      </Content>
+            />
+          <PizzaCard
+            image={imgCard6}
+            title="Olives & Cheese"
+
+            />
+
+          <PizzaCard
+            image={imgCard5}
+            title="Portugal Pizza"
+
+            />
+
+          <PizzaCard
+            image={imgCard4}
+            title="Four Cheese"
+            />
+
+          <PizzaCard
+            image={imgCard3}
+            title="Hawai"
+            />
+
+          <PizzaCard
+            image={imgCard2}
+            title="Peperoni"
+            />
+          <PizzaCard
+            image={imgCard7}
+            title="Chicken & Catupiry"
+            />
+    </Content>
     </Container>
   )
 }
