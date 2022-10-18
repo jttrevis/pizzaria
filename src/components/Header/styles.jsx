@@ -6,17 +6,16 @@ export const Container = styled.header`
   background-image: url(${pizzaBG});
   background-size: cover;
   color: white;
-  height: 100vh;
+
   background-attachment: fixed;
-  display: grid;
-
-
+  display: flex;
+  width: 100%;
 
 `;
 
 
 export const Content = styled.div`
-  max-width: 1120px;
+  max-width: 100%;
   margin: 100px auto;
 
 
@@ -69,6 +68,20 @@ export const Content = styled.div`
     width: 300px;
 
   }
+
+  @media (max-width: 1100px){
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+
+    }
+
+    img {
+
+
+    }
+  }
 `;
 
 
@@ -96,4 +109,16 @@ export const Banner = styled.div`
     text-decoration: underline;
     font-size: 30px;
   }
+
+  @media (max-width: 1050px) {
+
+
+    h1 {
+      display: none;
+
+    }
+
+  }
 `;
+
+

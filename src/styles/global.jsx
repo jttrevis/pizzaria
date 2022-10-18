@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-
+  overflow-x: hidden;
 
 }
 
@@ -27,6 +27,7 @@ button {
 
 body{
   -webkit-font-smoothing: antialiased;
+
 }
 
 

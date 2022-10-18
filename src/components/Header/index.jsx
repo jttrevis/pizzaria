@@ -10,7 +10,7 @@ import cart from '../../assets/cart.png'
 export const  Header = () => {
   return (
     <Container>
-      <Content>
+      <Content className='content'>
         <ul>
           <li>
             <Link spy={true} smooth={true} offset={50} duration={500} to="home">Home</Link>
@@ -18,7 +18,9 @@ export const  Header = () => {
           <li>
             <Link spy={true} smooth={true} offset={50} duration={500} to="menu">Menu</Link>
           </li>
-          <img className="logo" src={logoImg} alt="pizzaria logo" ></img>
+          <div>
+             <img className="logo" src={logoImg} alt="pizzaria logo" ></img>
+          </div>
           <li>
             <Link spy={true} smooth={true} offset={50} duration={500} to="contact">Contact</Link>
           </li>

@@ -13,7 +13,7 @@ color: white;
 
 
 export const Content = styled.div`
-    max-width: 1120px;
+    max-width: 1200px;
     margin-bottom: 100px;
     background: black;
     font-weight: bold;

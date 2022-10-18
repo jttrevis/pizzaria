@@ -12,21 +12,20 @@ export const Container = styled.div`
 
 
 export const Content = styled.div`
-    max-width: 1120px;
-    height: 100vh;
+    max-width: 1200px;
+
     background: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 
 
   div {
     text-align: center;
-    margin: 50px auto;
-    padding: 10px;
+    margin: 3rem auto;
 
     iframe{
-      width: 1100px;
-      height: 500px;
+      width: 63rem;
+      height: 35rem;
     }
 
 

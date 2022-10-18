@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 export const Container = styled.main`
-  height: 100vh;
   display: grid;
   background: black;
 
@@ -10,7 +9,7 @@ export const Container = styled.main`
 
 
 export const Content = styled.div`
-    max-width: 1120px;
+    max-width: 1200px;
     margin: 100px auto;
     display: flex;
     justify-content: left;
@@ -54,5 +53,10 @@ export const Content = styled.div`
   }
 
 
-
+  @media (max-width: 1000px){
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 `
