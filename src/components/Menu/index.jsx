@@ -50,10 +50,6 @@ export const  Menu = () => {
             image={imgCard2}
             title="Peperoni"
             />
-          <PizzaCard
-            image={imgCard7}
-            title="Chicken & Catupiry"
-            />
     </Content>
     </Container>
   )

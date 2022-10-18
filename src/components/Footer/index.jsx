@@ -10,9 +10,9 @@ export const Footer = () => {
   return (
     <Container>
       <Content id='contact'>
-        <a href="#instagram"><img src={instagramImg} alt="instagram" /></a>
-        <a href="#facebook"><img src={facebookImg} alt="facebook" /></a>
-        <a href="#whatsapp"><img src={whatsappImg} alt="whatsapp" /></a>
+        <a href="https://www.instagram.com/"><img src={instagramImg} alt="instagram" /></a>
+        <a href="https://www.facebook.com/"><img src={facebookImg} alt="facebook" /></a>
+        <a href="https://www.whatsapp.com/"><img src={whatsappImg} alt="whatsapp" /></a>
       </Content>
 
     </Container>
