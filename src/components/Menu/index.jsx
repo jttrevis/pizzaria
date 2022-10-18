@@ -18,8 +18,9 @@ export const  Menu = () => {
       <div>
         <h3>Menu</h3>
       </div>
-    <Content>
+      <Content >
           <PizzaCard
+
             image={imgCard7}
             title="Chicken & Cheese"
 
@@ -50,7 +51,7 @@ export const  Menu = () => {
             image={imgCard2}
             title="Peperoni"
             />
-    </Content>
+      </Content>
     </Container>
   )
 }

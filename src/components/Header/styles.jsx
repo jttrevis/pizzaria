@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import pizzaBG from '../../assets/pizzas.jpg'
+import pizzaBG02 from '../../assets/marge.jpg'
 
 
 export const Container = styled.header`
@@ -11,6 +12,10 @@ export const Container = styled.header`
   display: flex;
   width: 100%;
 
+
+  @media (max-width: 500px){
+    background-image: url(${pizzaBG02});
+  }
 `;
 
 
@@ -69,19 +74,19 @@ export const Content = styled.div`
 
   }
 
-  @media (max-width: 1100px){
+  @media (max-width: 500px){
     ul {
       display: flex;
       flex-direction: column;
-      margin: 0 auto;
+      font-size: 25px;
 
     }
-
     img {
-
+      display: none;
 
     }
-  }
+
+
 `;
 
 

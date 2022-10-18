@@ -53,10 +53,26 @@ export const Content = styled.div`
   }
 
 
-  @media (max-width: 1000px){
+  @media (max-width: 500px){
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
+
+    img {
+      width: 100%;
+    }
+
+    span {
+      font-size: 70px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
+    button {
+      width: 90%;
+    }
   }
 `

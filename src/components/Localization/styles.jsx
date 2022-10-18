@@ -30,4 +30,11 @@ export const Content = styled.div`
 
 
   }
+
+
+  @media (max-width: 500px){
+    iframe {
+
+    }
+  }
 `;

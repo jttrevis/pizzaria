@@ -6,11 +6,23 @@ export const Container = styled.div`
     text-align: center;
     background: black;
     color: white;
+    margin: 0;
 
     h3 {
       font-size: 80px;
       padding: 80px;
     }
+
+    @media (max-width: 500px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 1.5rem;
+
+
+
+    }
+
 
 `;
 
@@ -35,6 +47,13 @@ export const Content = styled.div`
     margin: 5rem 10rem;
 
   }
+
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    gap: 3rem;
+  }
+
 
 `;
 
