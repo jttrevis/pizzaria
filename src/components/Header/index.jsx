@@ -1,7 +1,8 @@
 import React from "react"
 import { Banner, Container, Content } from "./styles"
 
-import {Link} from 'react-scroll'
+import { Link } from 'react-router-dom'
+
 import logoImg from '../../assets/logo-no-background.png'
 import cart from '../../assets/cart.png'
 
@@ -13,19 +14,19 @@ export const  Header = () => {
       <Content className='content'>
         <ul>
           <li>
-            <Link spy={true} smooth={true} offset={50} duration={500} to="home">Home</Link>
+            <Link  to="/">Home</Link>
           </li>
           <li>
-            <Link spy={true} smooth={true} offset={50} duration={500} to="menu">Menu</Link>
+            <Link  to="/menu">Menu</Link>
           </li>
           <div>
              <img className="logo" src={logoImg} alt="pizzaria logo" ></img>
           </div>
           <li>
-            <Link spy={true} smooth={true} offset={50} duration={500} to="contact">Contact</Link>
+            <Link to="#contact">Contact</Link>
           </li>
           <li>
-            <a href="#cart"><img src={cart} alt="logo cart" ></img></a>
+            <Link to='#cart' ><img src={cart} alt="logo cart" ></img></Link>
           </li>
         </ul>
 

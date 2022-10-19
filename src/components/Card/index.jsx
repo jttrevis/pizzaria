@@ -71,7 +71,7 @@ export const PizzaCard = ({
           <AddShoppingCartIcon />
         </IconButton>
         <Button className={classes.buttonCard} variant="contained"  href="#contained-buttons">
-        Checkout
+        Add
       </Button>
       </CardActions>
 

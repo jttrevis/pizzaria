@@ -1,21 +1,25 @@
-import { Footer } from "./components/Footer"
-import { Header } from "./components/Header"
-import { Localization } from "./components/Localization"
-import { Main } from "./components/Main"
-import { Menu } from "./components/Menu"
+
+import { Home } from './pages/Home'
 import { GlobalStyle } from "./styles/global"
 
+import {
+
+  BrowserRouter,
+  Routes,
+  Route,
+
+} from 'react-router-dom'
+import { MenuPage } from './pages/MenuPage'
 
 function App() {
   return (
-    <>
-      <Header />
-      <Main />
-      <Menu />
-      <Localization />
-      <Footer />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/menu" element={<MenuPage/>}/>
+      </Routes>
       <GlobalStyle />
-    </>
+    </BrowserRouter>
   )
 }
 
