@@ -80,13 +80,15 @@ export const Content = styled.div`
     ul {
       display: flex;
       flex-direction: column;
-      font-size: 25px;
+      font-size: 2rem;
 
     }
     img {
       display: none;
 
     }
+
+
 
 
 `;
@@ -98,7 +100,8 @@ export const Banner = styled.div`
   align-items: center;
   justify-content: center;
   margin: 120px auto;
-  line-height: 70px;
+
+
 
 
   span {
@@ -117,14 +120,19 @@ export const Banner = styled.div`
     font-size: 30px;
   }
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1100px) {
 
 
     h1 {
       display: none;
 
     }
+  }
 
+  @media (max-width: 1200px){
+    h1{
+      font-size: 10rem;
+    }
   }
 `;
 
