@@ -120,7 +120,7 @@ export const Banner = styled.div`
     font-size: 30px;
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1210px) {
 
 
     h1 {
