@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Head } from '../components/Head'
 import { PizzaCard } from '../components/Card'
 import { Footer } from '../components/Footer'
 import imgCard7 from '../assets/pizza7.jpg'
@@ -23,22 +23,14 @@ import wings2 from '../assets/wings2.jpg'
 import wings3 from '../assets/wings3.jpg'
 import nachos from '../assets/nachos.jpg'
 
-
-
-
 import { Content, Container } from './Menu.style'
-import logoImg from '../assets/logo-no-background.png'
 
 
 
 export const MenuPage = () => {
   return (
     <Container>
-      <nav>
-        <div>
-          <Link to="/" >< img className="logo" src={logoImg} alt="pizzaria logo" /></Link>
-        </div>
-      </nav>
+      <Head/>
       <section>
       <Content>
         <PizzaCard

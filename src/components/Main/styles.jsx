@@ -53,7 +53,7 @@ export const Content = styled.div`
   }
 
 
-  @media (max-width: 750px){
+  @media (max-width: 1100px){
     flex-direction: column;
     justify-content: center;
     text-align: center;

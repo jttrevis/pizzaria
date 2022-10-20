@@ -23,7 +23,7 @@ export const  Header = () => {
              <img className="logo" src={logoImg} alt="pizzaria logo" ></img>
           </div>
           <li>
-            <Link to="#contact">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
             <Link to='#cart' ><img src={cart} alt="logo cart" ></img></Link>
