@@ -3,7 +3,7 @@ import { Container, Content } from "./styles"
 
 
 
-import { CardItem } from '../Card'
+import { PizzaCard } from '../Card'
 import { Link } from 'react-router-dom'
 
 
@@ -15,7 +15,7 @@ export const  Menu = () => {
 
       </div>
       <Content >
-        <CardItem
+        <PizzaCard
          />
       </Content>
 

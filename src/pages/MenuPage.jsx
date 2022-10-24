@@ -3,7 +3,7 @@ import { Head } from '../components/Head'
 import { Footer } from '../components/Footer'
 
 import { Content, Container } from './Menu.style'
-import { CardItem } from '../components/Card'
+import { DrinksCard, PizzaCard, SidesCard } from '../components/Card'
 
 
 
@@ -13,7 +13,13 @@ export const MenuPage = () => {
     <Container>
       <Head/>
       <Content>
-        <CardItem/>
+        <PizzaCard/>
+      </Content>
+      <Content>
+        <SidesCard/>
+      </Content>
+      <Content>
+        <DrinksCard/>
       </Content>
       <Footer/>
     </Container>
