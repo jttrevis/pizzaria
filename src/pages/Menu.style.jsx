@@ -4,12 +4,20 @@ import styled from 'styled-components'
 
 
 export const Container = styled.div`
-  display: grid;
-  justify-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  background: black;
+    text-align: center;
+    background: black;
+    color: white;
+    margin: 0;
 
+  @media (max-width: 500px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1.8rem;
+
+
+
+  }
 
   .logo {
     width: 20rem;
@@ -18,30 +26,38 @@ export const Container = styled.div`
 
   }
 
-  div {
-
-      }
-
 `;
 
 
 export const Content = styled.div`
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  justify-content: center;
-  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
   padding-bottom: 10rem;
 
 
-  @media (max-width: 1100px){
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  @media (max-width: 1200px){
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 10rem;
+
   }
 
-  @media (max-width: 735px){
-    grid-template-columns: 1fr;
+  @media (max-width: 800px){
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5rem 10rem;
+
   }
+
+  @media (max-width: 640px) {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    gap: 3rem;
+  }
+
 
 `
 

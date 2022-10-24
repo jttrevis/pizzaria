@@ -3,10 +3,7 @@ import { Container, Content } from "./styles"
 
 
 
-import imgCard3 from '../../assets/pizza3.jpg'
-import imgCard4 from '../../assets/pizza4.jpg'
-import imgCard6 from '../../assets/pizza6.jpg'
-import { PizzaCard } from '../Card'
+import { CardItem } from '../Card'
 import { Link } from 'react-router-dom'
 
 
@@ -18,20 +15,8 @@ export const  Menu = () => {
 
       </div>
       <Content >
-
-          <PizzaCard
-            image={imgCard6}
-            title="Olives & Cheese"
-            />
-          <PizzaCard
-            image={imgCard4}
-            title="Four Cheese"
-            />
-          <PizzaCard
-            image={imgCard3}
-            title="Hawai"
-            />
-
+        <CardItem
+         />
       </Content>
 
       <div >

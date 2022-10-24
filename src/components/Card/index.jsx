@@ -12,6 +12,8 @@ import Button from '@material-ui/core/Button'
 
 import amber from '@material-ui/core/colors/amber'
 
+import  pizzasData  from '../../pizzasData.json'
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -40,41 +42,46 @@ const useStyles = makeStyles((theme) => ({
 
 }))
 
-export const PizzaCard = ({
-  image,
-  title,
-  avatar,
+const pizzaDb = pizzasData.pizzas;
 
-}) => {
+export const CardItem = () => {
   const classes = useStyles()
 
   return (
-    <Card className={classes.card}>
-      <CardHeader
-        title={title}
-      />
-      <CardMedia
-        className={classes.media}
-        image={image}
-        title={title}
-      />
-      <CardContent>
-        <Typography className={classes.cardContent}  variant="body2" color="textSecondary" component="p">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-           Voluptas ea enim debitis eaque deleniti eius nisi dignissimos
-            atque soluta libero odit tenetur accusantium similique labore
-             aspernatur consequatur, maiores ratione voluptates?
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
-        <IconButton className={classes.cardContent} aria-label="add to favorites">
-          <AddShoppingCartIcon />
-        </IconButton>
-        <Button className={classes.buttonCard} variant="contained"  href="#contained-buttons">
-        <strong>£ 22.99</strong>
-      </Button>
-      </CardActions>
 
-    </Card>
+    <>
+    {pizzaDb.map(pizza => {
+      return (
+        <Card className={classes.card}>
+        <CardHeader
+          name={pizza.name}
+          title={pizza.name}
+        />
+        <CardMedia
+          className={classes.media}
+          image={pizza.image}
+          name={pizza.name}
+        />
+        <CardContent>
+          <Typography className={classes.cardContent}   variant="body2" color="textSecondary" component="p">
+            {pizza.ingredients}
+          </Typography>
+        </CardContent>
+        <CardActions disableSpacing>
+          <IconButton className={classes.cardContent} aria-label="add to favorites">
+            <AddShoppingCartIcon />
+          </IconButton>
+          <Button className={classes.buttonCard} variant="contained"  href="#contained-buttons">
+          <strong>{pizza.price}</strong>
+        </Button>
+        </CardActions>
+
+      </Card>
+
+      )
+    })}
+
+
+    </>
   )
 }

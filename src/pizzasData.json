@@ -1,0 +1,40 @@
+{
+  "pizzas": [
+    {
+      "id": 1,
+      "name": "Pepperoni",
+      "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
+      "price": 19.99,
+      "image": "image/pizza2.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Cheese",
+      "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
+      "price": 15.99,
+      "image": "image/pizza3.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pepperoni",
+      "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
+      "price": 19.99,
+      "image": "image/pizza4.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Pepperoni",
+      "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
+      "price": 19.99,
+      "image": "image/pizza5.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pepperoni",
+      "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
+      "price": 19.99,
+      "image": "image/pizza5.jpg"
+    }
+
+  ]
+}
