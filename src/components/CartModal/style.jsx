@@ -1,0 +1,41 @@
+import styled from 'styled-components'
+
+
+export const Container = styled.div`
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+
+  background-color: black;
+  color: white;
+
+  div{
+    width: 100px;
+    height: 100px;
+
+    .item {
+      width: 100%;
+    }
+  }
+
+  button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 80%;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: filter 0.3s;
+
+
+
+  &:hover{
+      filter: brightness(0.7);
+    }
+  }
+
+
+`

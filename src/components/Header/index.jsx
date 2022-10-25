@@ -1,14 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
 import { Banner, Container, Content } from "./styles"
 
 import { Link } from 'react-router-dom'
 
 import logoImg from '../../assets/logo-no-background.png'
-import cart from '../../assets/cart.png'
+
+
 
 
 
 export const  Header = () => {
+
   return (
     <Container>
       <Content className='content'>
@@ -26,7 +28,7 @@ export const  Header = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <Link to='#cart' ><img src={cart} alt="logo cart" ></img></Link>
+            <Link  to='#cart' ><img  alt="logo cart" ></img></Link>
           </li>
         </ul>
 
@@ -35,6 +37,7 @@ export const  Header = () => {
           <h1>Pizzaria Trevisol</h1>
           <h2>120 years of experencie </h2>
         </Banner>
+
       </Content>
     </Container>
   )

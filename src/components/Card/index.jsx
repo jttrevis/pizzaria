@@ -9,10 +9,13 @@ import IconButton from '@material-ui/core/IconButton'
 import Typography from '@material-ui/core/Typography'
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart'
 import Button from '@material-ui/core/Button'
-
 import amber from '@material-ui/core/colors/amber'
 
 import  pizzasData  from '../../pizzasData.json'
+import { useStateContext } from '../../context/StateContext'
+
+
+
 
 
 
@@ -46,39 +49,61 @@ const pizzaDb = pizzasData.pizzas
 const sidesDb = pizzasData.sides
 const drinksDb = pizzasData.drinks
 
-export const PizzaCard = () => {
+export const PizzaCard = (props) => {
+
+  const { decQyt, incQty, qty, onAdd } = useStateContext()
+
   const classes = useStyles()
 
   return (
 
-    <>
-    {pizzaDb.map(pizza => {
-      return (
-        <Card className={classes.card}>
-        <CardHeader
-          name={pizza.name}
-          title={pizza.name}
-        />
-        <CardMedia
-          className={classes.media}
-          image={pizza.image}
-          name={pizza.name}
-        />
-        <CardContent>
-          <Typography className={classes.cardContent}   variant="body2" color="textSecondary" component="p">
-            {pizza.ingredients}
-          </Typography>
-        </CardContent>
-        <CardActions disableSpacing>
-          <IconButton className={classes.cardContent} aria-label="add to favorites">
-            <AddShoppingCartIcon />
-          </IconButton>
-          <Button className={classes.buttonCard} variant="contained"  href="#contained-buttons">
-          <strong>£{pizza.price}</strong>
-        </Button>
-        </CardActions>
 
-      </Card>
+    <>
+    {pizzaDb.map((item, index) => {
+      return (
+        <Card
+        item={item}
+        key={index}
+        className={classes.card}
+        >
+
+          <CardHeader
+            name={item.name}
+            title={item.name}
+          />
+          <CardMedia
+            className={classes.media}
+            image={item.image}
+            name={item.name}
+          />
+          <CardContent>
+            <Typography
+            className={classes.cardContent}
+            variant="body2"
+            color="textSecondary"
+            component="p">
+              {item.ingredients}
+            </Typography>
+          </CardContent>
+
+          <CardActions disableSpacing>
+            <IconButton
+            className={classes.cardContent}
+            aria-label="add to cart">
+              <AddShoppingCartIcon />
+            </IconButton>
+
+            <Button
+            className={classes.buttonCard}
+            variant="contained"
+            href="#contained-buttons"
+            onClick={() => onAdd(item)}
+            >
+            <strong>£{item.price}</strong>
+          </Button>
+          </CardActions>
+
+        </Card>
 
       )
     })}
@@ -91,32 +116,39 @@ export const PizzaCard = () => {
 export const SidesCard = () => {
   const classes = useStyles()
 
+  const { decQyt, incQty, qty, onAdd } = useStateContext()
+
+
+
+
+
+
   return (
 
     <>
-    {sidesDb.map(side => {
+    {sidesDb.map((item, index) => {
       return (
-        <Card className={classes.card}>
+        <Card  key={index}  item={item} className={classes.card}>
         <CardHeader
-          name={side.name}
-          title={side.name}
+          name={item.name}
+          title={item.name}
         />
         <CardMedia
           className={classes.media}
-          image={side.image}
-          name={side.name}
+          image={item.image}
+          name={item.name}
         />
         <CardContent>
           <Typography className={classes.cardContent}   variant="body2" color="textSecondary" component="p">
-            {side.ingredients}
+            {item.ingredients}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
           <IconButton className={classes.cardContent} aria-label="add to favorites">
             <AddShoppingCartIcon />
           </IconButton>
-          <Button className={classes.buttonCard} variant="contained"  href="#contained-buttons">
-          <strong>£{side.price}</strong>
+          <Button onClick={() => onAdd(item, qty)} className={classes.buttonCard} variant="contained"  href="#contained-buttons">
+          <strong>£{item.price}</strong>
         </Button>
         </CardActions>
 
@@ -133,33 +165,34 @@ export const SidesCard = () => {
 
 export const DrinksCard = () => {
   const classes = useStyles()
+  const { decQyt, incQty, qty, onAdd } = useStateContext()
 
   return (
 
     <>
-    {drinksDb.map(drink => {
+    {drinksDb.map(item => {
       return (
-        <Card className={classes.card}>
+        <Card  key={item.id} className={classes.card}>
         <CardHeader
-          name={drink.name}
-          title={drink.name}
+          name={item.name}
+          title={item.name}
         />
         <CardMedia
           className={classes.media}
-          image={drink.image}
-          name={drink.name}
+          image={item.image}
+          name={item.name}
         />
         <CardContent>
           <Typography className={classes.cardContent}   variant="body2" color="textSecondary" component="p">
-            {drink.ingredients}
+            {item.ingredients}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
           <IconButton className={classes.cardContent} aria-label="add to favorites">
             <AddShoppingCartIcon />
           </IconButton>
-          <Button className={classes.buttonCard} variant="contained"  href="#contained-buttons">
-          <strong>£{drink.price}</strong>
+          <Button onClick={() => onAdd(item, qty)} className={classes.buttonCard} variant="contained"  href="#contained-buttons">
+          <strong>£{item.price}</strong>
         </Button>
         </CardActions>
 
