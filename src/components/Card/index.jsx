@@ -116,7 +116,7 @@ export const PizzaCard = () => {
 export const SidesCard = () => {
   const classes = useStyles()
 
-  const { decQyt, incQty, qty, onAdd } = useStateContext()
+  const { qty, onAdd } = useStateContext()
 
 
 
@@ -165,7 +165,7 @@ export const SidesCard = () => {
 
 export const DrinksCard = () => {
   const classes = useStyles()
-  const { decQyt, incQty, qty, onAdd } = useStateContext()
+  const {  qty, onAdd } = useStateContext()
 
   return (
 

@@ -50,6 +50,7 @@ export const  Header = () => {
           <h2>120 years of experencie </h2>
         </Banner>
         <CartModal
+        ariaHideApp={false}
         isOpen={isCartModalOpen}
         onRequestClose={hanldeCloseCartModal}
         />
