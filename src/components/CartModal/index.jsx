@@ -23,8 +23,9 @@ export const CartModal = ({isOpen, onRequestClose}) => {
 
 
         <AiOutlineShopping size={50} />
-          {cartItems.length >= 1 && cartItems.map((item, index) => (
+          {cartItems.map((item, index) => (
             <div key={item._id}>
+              <img src={item.image} />
               <h5>{item.name}</h5>
               <h4>£{item.price}</h4>
             </div>

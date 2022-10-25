@@ -52,6 +52,10 @@ body{
     padding: 3rem;
     position: relative;
     border-radius: 0.25rem;
+
+    img{
+      width: 100%;
+    }
   }
 
 `

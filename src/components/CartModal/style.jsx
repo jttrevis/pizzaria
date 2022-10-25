@@ -10,8 +10,12 @@ export const Container = styled.div`
   color: white;
 
   div{
-    width: 100px;
-    height: 100px;
+
+    width: 150px;
+    border: 1px solid var(--primary-color);
+    margin: 2rem;
+
+
 
     .item {
       width: 100%;
@@ -23,7 +27,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 50px;
-  width: 80%;
+  width: 100%;
   font-size: 15px;
   font-weight: bold;
   background-color: var(--primary-color);

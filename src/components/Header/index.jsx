@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import { Banner, Container, Content } from "./styles"
-
+import cart from '../../assets/cart.png'
 import { Link } from 'react-router-dom'
+import { CartModal } from '../CartModal'
 
 import logoImg from '../../assets/logo-no-background.png'
 
@@ -10,6 +11,16 @@ import logoImg from '../../assets/logo-no-background.png'
 
 
 export const  Header = () => {
+  const [isCartModalOpen, setIsCartModalOpen] = useState(false)
+
+
+  function hanldeOpenCartModal() {
+    setIsCartModalOpen(true)
+  }
+
+  function hanldeCloseCartModal() {
+    setIsCartModalOpen(false)
+  }
 
   return (
     <Container>
@@ -28,7 +39,7 @@ export const  Header = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <Link  to='#cart' ><img  alt="logo cart" ></img></Link>
+            <Link onClick={hanldeOpenCartModal} ><img src={cart} alt="logo cart" ></img></Link>
           </li>
         </ul>
 
@@ -37,7 +48,10 @@ export const  Header = () => {
           <h1>Pizzaria Trevisol</h1>
           <h2>120 years of experencie </h2>
         </Banner>
-
+        <CartModal
+        isOpen={isCartModalOpen}
+        onRequestClose={hanldeCloseCartModal}
+        />
       </Content>
     </Container>
   )
