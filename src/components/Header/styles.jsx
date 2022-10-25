@@ -56,16 +56,7 @@ export const Content = styled.div`
       }
 
 
-      a {
-        img:after {
 
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: white;
-
-        }
-      }
     }
   }
 

@@ -49,9 +49,9 @@ const pizzaDb = pizzasData.pizzas
 const sidesDb = pizzasData.sides
 const drinksDb = pizzasData.drinks
 
-export const PizzaCard = (props) => {
+export const PizzaCard = () => {
 
-  const { decQyt, incQty, qty, onAdd } = useStateContext()
+  const { qty, onAdd } = useStateContext()
 
   const classes = useStyles()
 
@@ -97,7 +97,7 @@ export const PizzaCard = (props) => {
             className={classes.buttonCard}
             variant="contained"
             href="#contained-buttons"
-            onClick={() => onAdd(item)}
+            onClick={() => onAdd(item, qty)}
             >
             <strong>£{item.price}</strong>
           </Button>

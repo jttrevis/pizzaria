@@ -9,7 +9,7 @@ export const Container = styled.div`
   background-color: black;
   color: white;
 
-  div{
+  .item-cart{
 
     width: 150px;
     border: 1px solid var(--primary-color);
@@ -20,7 +20,17 @@ export const Container = styled.div`
     .item {
       width: 100%;
     }
+
+
   }
+
+
+
+  .total {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 5rem;
+    }
 
   button {
   display: flex;

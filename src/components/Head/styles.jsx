@@ -10,6 +10,7 @@ export const Container = styled.div`
   background: black;
 
 
+
   .logo {
     width: 100%;
   }
@@ -26,6 +27,7 @@ export const Container = styled.div`
 
   a {
     cursor: pointer;
+    color: white;
   }
 
 

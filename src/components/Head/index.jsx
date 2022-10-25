@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom'
 import { Container } from './styles'
 import { CartModal } from '../CartModal'
 import cart from '../../assets/cart.png'
+import { useStateContext } from '../../context/StateContext'
 
 export const Head = () => {
+  const { totalQuantaties } = useStateContext()
 
   const [isCartModalOpen, setIsCartModalOpen] = useState(false)
 
@@ -24,7 +26,7 @@ export const Head = () => {
         <Link to="/" >< img className="logo" src={logoImg} alt="pizzaria logo" /></Link>
       </div>
       <div className='cart-container'>
-        <a onClick={hanldeOpenCartModal} ><img src={cart} alt="logo cart" ></img></a>
+        <a onClick={hanldeOpenCartModal} > {totalQuantaties} <img src={cart} alt="logo cart" ></img></a>
       </div>
     <CartModal
         isOpen={isCartModalOpen}

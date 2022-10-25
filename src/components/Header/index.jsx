@@ -40,6 +40,7 @@ export const  Header = () => {
           </li>
           <li>
             <Link onClick={hanldeOpenCartModal} ><img src={cart} alt="logo cart" ></img></Link>
+
           </li>
         </ul>
 
