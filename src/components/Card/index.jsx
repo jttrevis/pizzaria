@@ -147,7 +147,7 @@ export const SidesCard = () => {
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
-          <IconButton className={classes.cardContent} aria-label="add to favorites">
+          <IconButton onClick={() => onAdd(item, qty)} className={classes.cardContent} aria-label="add to favorites">
             <AddShoppingCartIcon />
           </IconButton>
           <Button onClick={() => onAdd(item, qty)} className={classes.buttonCard} variant="contained"  href="#contained-buttons">
@@ -191,7 +191,7 @@ export const DrinksCard = () => {
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
-          <IconButton className={classes.cardContent} aria-label="add to favorites">
+          <IconButton onClick={() => onAdd(item, qty)} className={classes.cardContent} aria-label="add to favorites">
             <AddShoppingCartIcon />
           </IconButton>
           <Button onClick={() => onAdd(item, qty)} className={classes.buttonCard} variant="contained"  href="#contained-buttons">
