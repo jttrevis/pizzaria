@@ -88,9 +88,12 @@ export const PizzaCard = () => {
 
           <CardActions disableSpacing>
             <IconButton
+            onClick={() => onAdd(item, qty)}
             className={classes.cardContent}
             aria-label="add to cart">
-              <AddShoppingCartIcon />
+              <AddShoppingCartIcon
+
+               />
             </IconButton>
 
             <Button

@@ -25,22 +25,24 @@ export const CartModal = ({item, isOpen, onRequestClose}) => {
 
 
         <AiOutlineShopping size={50} />
-          {cartItems.length >= 1 && cartItems.map((item) => (
-            <div className='item-cart' key={item}>
-              <img src={item.image} />
-              <h5>{item.name}</h5>
-              <h4>£{item.price}</h4>
+          {cartItems.map((item) => (
+            <div className='item-container'>
+              <div className='item-cart' key={item}>
+                <img src={item.image} />
+                <h5>{item.name}</h5>
+                <h4>£{item.price}</h4>
+              </div>
             </div>
           ))}
             <div className='total'>
               <h4>Qty: ({totalQuantities})</h4>
             </div>
             <div className='total'>
-              <h3>Total: £ {totalPrice}</h3>
+              <h3>Total:{new Intl.NumberFormat('en-GB', {
+                        style: 'currency',
+                        currency: 'GBP'
+                    }).format(totalPrice)}</h3>
             </div>
-
-
-
             <button
             >
               Checkout

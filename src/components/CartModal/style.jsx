@@ -4,16 +4,17 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: block;
   text-align: center;
+
   margin: 0 auto;
 
   background-color: black;
   color: white;
 
   .item-cart{
-
+    margin: 1rem;
     width: 150px;
     border: 1px solid var(--primary-color);
-    margin: 2rem;
+
 
 
 
