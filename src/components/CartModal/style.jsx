@@ -26,33 +26,7 @@ export const Container = styled.div`
     display: flex;
   }
 
-  .quantity {
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 0.25rem;
 
-  }
-
-  .minus {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
-    border-right: 1px solid var(--primary-color);
-    cursor: pointer;
-  }
-  .plus {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center;
-    border-left: 1px solid var(--primary-color);
-    cursor: pointer;
-  }
-
-  .qty {
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-  }
 
   .remove {
     display: flex;
