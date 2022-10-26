@@ -7,52 +7,60 @@ import {AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping } from '
 import { TiDeleteOutline } from 'react-icons/ti'
 
 export const CartModal = ({item, isOpen, onRequestClose}) => {
-  const { totalPrice, totalQuantities, cartItems} = useStateContext()
+  const { totalPrice, totalQuantities, cartItems , qty, incQty, decQty} = useStateContext()
 
 
 
   return (
 
-      <Modal
-
-        ariaHideApp={false}
-        isOpen={isOpen}
-        onRequestClose={onRequestClose}
-        overlayClassName="react-modal-overlay"
-        className="react-modal-content"
-        >
-        <Container
-
-        >
+    <Modal
+      ariaHideApp={false}
+      isOpen={isOpen}
+      onRequestClose={onRequestClose}
+      overlayClassName="react-modal-overlay"
+      className="react-modal-content"
+      >
+      <Container>
 
 
         <AiOutlineShopping size={50} />
-
           <h1>Your Cart</h1>
-          {cartItems.map((item) => (
-            <div className='item-container' key={item.name}>
-              <div className='item-cart' >
-                <img src={item.image} />
-                <h5>{item.name}</h5>
-                <h4>£{item.price}</h4>
+          {cartItems.length >= 1 && cartItems.map((item) => (
+          <div className='item-container' key={item.name}>
+            <div className='item-cart' >
+              <img src={item.image} />
+            </div>
+            <div className='item-text'>
+              <h3>{item.name}</h3>
+              <h4>£{item.price}</h4>
+              <div>
+                <p className='quantity'>
+                  <span className='minus' onClick={decQty}><AiOutlineMinus/></span>
+                  <span className='qty'>  {qty}  </span>
+                  <span className='plus' onClick={incQty}><AiOutlinePlus/></span>
+                </p>
               </div>
             </div>
+            <button className='remove' onClick=""><TiDeleteOutline size={18}/></button>
+          </div>
+
           ))}
             <div className='total'>
-              <h4>Qty: ({totalQuantities})</h4>
+                <h4>Qty: ({totalQuantities})</h4>
             </div>
             <div className='total'>
               <h3>Total:{new Intl.NumberFormat('en-GB', {
-                        style: 'currency',
-                        currency: 'GBP'
-                    }).format(totalPrice)}</h3>
+                          style: 'currency',
+                          currency: 'GBP'
+                      }).format(totalPrice)}</h3>
             </div>
-            <button
-            >
-              Checkout
-            </button>
-        </Container>
-      </Modal>
+          <button className='btn-checkout'>
+            Checkout
+          </button>
+
+
+      </Container>
+    </Modal>
 
   )
 }

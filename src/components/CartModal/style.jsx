@@ -22,7 +22,59 @@ export const Container = styled.div`
 
   }
 
+  .item-container {
+    display: flex;
+  }
 
+  .quantity {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.25rem;
+
+  }
+
+  .minus {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    border-right: 1px solid var(--primary-color);
+    cursor: pointer;
+  }
+  .plus {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    border-left: 1px solid var(--primary-color);
+    cursor: pointer;
+  }
+
+  .qty {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+  }
+
+  .remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    background: transparent;
+    color: #ce2f2f;
+    width: 5rem;
+    height: 100%;
+    tab-size: 50px;
+  }
+
+
+  .item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+  }
 
   .total {
       display: flex;
@@ -30,7 +82,7 @@ export const Container = styled.div`
       margin-right: 5rem;
     }
 
-  button {
+  .btn-checkout {
   display: flex;
   justify-content: center;
   align-items: center;
