@@ -6,7 +6,7 @@ export const Container = styled.div`
   text-align: center;
 
   margin: 0 auto;
-
+  max-height: 70vh;
   background-color: black;
   color: white;
 
@@ -15,13 +15,10 @@ export const Container = styled.div`
     width: 150px;
     border: 1px solid var(--primary-color);
 
+  }
 
-
-
-    .item {
-      width: 100%;
-    }
-
+  img {
+    display: flex;
 
   }
 

@@ -21,13 +21,17 @@ export const CartModal = ({item, isOpen, onRequestClose}) => {
         overlayClassName="react-modal-overlay"
         className="react-modal-content"
         >
-        <Container>
+        <Container
+
+        >
 
 
         <AiOutlineShopping size={50} />
+
+          <h1>Your Cart</h1>
           {cartItems.map((item) => (
-            <div className='item-container'>
-              <div className='item-cart' key={item}>
+            <div className='item-container' key={item.name}>
+              <div className='item-cart' >
                 <img src={item.image} />
                 <h5>{item.name}</h5>
                 <h4>£{item.price}</h4>
