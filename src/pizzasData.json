@@ -4,42 +4,42 @@
       "id": 1,
       "name": "Pepperoni",
       "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
-      "price": 19.90,
+      "price": 19.99,
       "image": "image/pizza2.jpg"
     },
     {
       "id": 2,
       "name": "Portuguese",
       "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
-      "price": 15.90,
+      "price": 15.99,
       "image": "image/pizza3.jpg"
     },
     {
       "id": 3,
       "name": "Four Cheese",
       "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
-      "price": 17.95,
+      "price": 17.99,
       "image": "image/pizza4.jpg"
     },
     {
       "id": 4,
       "name": "Cheese & Olives",
       "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
-      "price": 16.90,
+      "price": 16.99,
       "image": "image/pizza5.jpg"
     },
     {
       "id": 5,
       "name": "Chicken & Cheese",
       "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
-      "price": 15.55,
+      "price": 15.59,
       "image": "image/pizza6.jpg"
     },
     {
       "id": 6,
       "name": "Chicken & Catupiry",
       "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
-      "price": 19.80,
+      "price": 19.99,
       "image": "image/pizza7.jpg"
     }
 
@@ -50,42 +50,42 @@
       "id": 1,
       "name": "Fries",
       "ingredients": "Potatoes Fries Classic",
-      "price": 15.45,
+      "price": 15.59,
       "image": "image/fries1.jpg"
     },
     {
       "id": 2,
       "name": "Fries",
       "ingredients": "Potatoes Fries Classic",
-      "price": 15.50,
+      "price": 15.59,
       "image": "image/fries2.jpg"
     },
     {
       "id": 3,
       "name": "Nachos",
       "ingredients": "Potatoes Fries Classic",
-      "price": 15.00,
+      "price": 15.59,
       "image": "image/nachos.jpg"
     },
     {
       "id": 4,
       "name": "Wings",
       "ingredients": "Classic Chicken Wings",
-      "price": 15.25,
+      "price": 15.59,
       "image": "image/wings1.jpg"
     },
     {
       "id": 5,
       "name": "Wings Fried",
       "ingredients": "Chicken Wings Fried",
-      "price": 15.25,
+      "price": 15.59,
       "image": "image/wings2.jpg"
     },
     {
       "id": 6,
       "name": "Wings BBQ",
       "ingredients": "Classic Wings BBQ",
-      "price": 15.10,
+      "price": 15.59,
       "image": "image/wings3.jpg"
     }
   ],
@@ -95,42 +95,42 @@
       "id": 1,
       "name": "Pepsi",
       "ingredients": "Pepsi 300ml",
-      "price": 1.90,
+      "price": 1.99,
       "image": "image/refri1.jpg"
     },
     {
       "id": 2,
       "name": "Coca Cola",
       "ingredients": "Coca Cola 500ml",
-      "price": 1.90,
+      "price": 1.99,
       "image": "image/refri2.jpg"
     },
     {
       "id": 3,
       "name": "Coca Cola",
       "ingredients": "Coca Cola 300ml",
-      "price": 1.90,
+      "price": 1.99,
       "image": "image/refri3.jpg"
     },
     {
       "id": 4,
       "name": "Dr.Paper",
       "ingredients": "Dr.Paper 300ml",
-      "price": 1.90,
+      "price": 1.99,
       "image": "image/refri4.jpg"
     },
     {
       "id": 5,
       "name": "Budweiser",
       "ingredients": "Budweiser 300ml Long Neck",
-      "price": 3.90,
+      "price": 3.99,
       "image": "image/beer2.jpg"
     },
     {
       "id": 6,
       "name": "Heineken",
       "ingredients": "Heineken 300ml Long Neck",
-      "price": 4.50,
+      "price": 4.59,
       "image": "image/beer1.jpg"
     }
   ]

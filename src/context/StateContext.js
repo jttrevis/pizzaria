@@ -33,7 +33,7 @@ export const StateContext = ({ children }) => {
     foundProduct = cartItems.find((item) => item.id === productRemove.id)
     const newCartItems = cartItems.filter((product) => product !== productRemove)
 
-    setTotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price)
+    setTotalPrice((prevTotalPrice) => prevTotalPrice - productRemove.price)
     setTotalQuantities(prevTotalQuantities => prevTotalQuantities - 1)
     setCartItems(newCartItems)
     setQty(cartItems.length - 1)
@@ -46,8 +46,6 @@ export const StateContext = ({ children }) => {
         cartItems,
         totalPrice,
         totalQuantities,
-
-
         qty,
         onAdd,
         onRemove
