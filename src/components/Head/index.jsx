@@ -7,7 +7,7 @@ import cart from '../../assets/cart.png'
 import { useStateContext } from '../../context/StateContext'
 
 export const Head = () => {
-  const {  qty } = useStateContext()
+  const {  qty, totalPrice } = useStateContext()
 
   const [isCartModalOpen, setIsCartModalOpen] = useState(false)
 
@@ -29,6 +29,7 @@ export const Head = () => {
       <div className='cart-container'>
         <a onClick={hanldeOpenCartModal} ><img className='cart-icon' src={cart} alt="logo cart" ></img></a>
         <span>Your Cart ( {qty} ) </span>
+        <span> Total: ( £{totalPrice} ) </span>
       </div>
     <CartModal
         isOpen={isCartModalOpen}
