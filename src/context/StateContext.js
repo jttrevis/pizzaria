@@ -17,36 +17,21 @@ export const StateContext = ({ children }) => {
 
 
   const onAdd = (product, quantity) => {
-    const checkProductInCart = cartItems.find((item) => item._id === product._id)
 
     setTotalPrice((prevTotalPrice) => prevTotalPrice + product.price * quantity)
     setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + quantity)
 
-    if (checkProductInCart) {
-      const updatedCartItems = cartItems.map((cartProduct) => {
-        if (cartProduct._id === product._id)
-          return {
-            ...cartProduct,
-            quantity: cartProduct.quantity + quantity
-          }
-      })
+    setCartItems([...cartItems, { ...product }])
 
-      setCartItems([...updatedCartItems, { ...product }])
-    } else {
-      product.quantity = quantity
-
-      setCartItems([...cartItems, { ...product }])
-
-    }
     toast.success(`${qty}x ${product.name} added to the cart`)
-    console.log(cartItems);
+
   }
 
 
 
-  const onRemove = (product) => {
-    const newCartItems = cartItems.filter((item) => item.name !== product.name)
-    foundProduct = cartItems.find((item) => item.name === product.name)
+  const onRemove = (productRemove) => {
+    foundProduct = cartItems.find((item) => item.id === productRemove.id)
+    const newCartItems = cartItems.filter((product) => product !== productRemove)
 
     setTotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price)
     setTotalQuantities(prevTotalQuantities => prevTotalQuantities - 1)

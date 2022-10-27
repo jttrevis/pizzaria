@@ -27,9 +27,7 @@ export const CartModal = ({item, isOpen, onRequestClose}) => {
           <h1>Your Cart</h1>
           {cartItems.map((item) => (
           <div className='item-container' key={item.name}>
-            <div className='item-cart' >
-              <img src={item.image} />
-            </div>
+
             <div className='item-text'>
               <h3>{item.name}</h3>
               <h4>£{item.price}</h4>
