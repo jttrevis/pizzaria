@@ -16,10 +16,10 @@ export const StateContext = ({ children }) => {
 
 
 
-  const onAdd = (product, quantity) => {
+  const onAdd = (product) => {
 
-    setTotalPrice((prevTotalPrice) => prevTotalPrice + product.price * quantity)
-    setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + quantity)
+    setTotalPrice((prevTotalPrice) => prevTotalPrice + product.price)
+    setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + 1)
 
     setCartItems([...cartItems, { ...product }])
 

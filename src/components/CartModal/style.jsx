@@ -24,6 +24,10 @@ export const Container = styled.div`
 
   .item-container {
     display: flex;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 0.25rem;
+    margin: 1rem;
   }
 
 
