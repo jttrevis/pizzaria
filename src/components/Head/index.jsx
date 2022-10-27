@@ -28,8 +28,11 @@ export const Head = () => {
       </div>
       <div className='cart-container'>
         <a onClick={hanldeOpenCartModal} ><img className='cart-icon' src={cart} alt="logo cart" ></img></a>
-        <span>Your Cart ( {qty} ) </span>
-        <span> Total: ( £{totalPrice} ) </span>
+        <span>Item(s) : {qty}  </span>
+        <span>Total : {new Intl.NumberFormat('en-GB', {
+                          style: 'currency',
+                          currency: 'GBP'
+                      }).format(totalPrice)}</span>
       </div>
     <CartModal
         isOpen={isCartModalOpen}
