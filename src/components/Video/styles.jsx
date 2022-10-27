@@ -33,8 +33,12 @@ export const Content = styled.div`
 
 
   @media (max-width: 500px){
-    iframe {
+    .video {
+      width: 100%;
 
+      iframe{
+        width: 100%;
+      }
     }
   }
 `;

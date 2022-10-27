@@ -54,6 +54,11 @@ export const FormContainer = styled.form`
 
   }
 
+
+
+
+
+
   .adress {
 
     font-size: 1.5rem;
@@ -62,6 +67,9 @@ export const FormContainer = styled.form`
 
 
   }
+
+
+
 
   @media (max-width: 1200px){
     grid-template-columns: 1fr;
@@ -83,9 +91,8 @@ export const FormContainer = styled.form`
       width: 80%;
 
 
-
-
     }
+
 
     .adress {
       font-size: 1rem;
@@ -93,4 +100,34 @@ export const FormContainer = styled.form`
 
   }
 
+
 `
+
+export const Content = styled.div`
+    max-width: 100%;
+
+    background: black;
+    font-weight: bold;
+    font-size: 16px;
+
+
+  div {
+    text-align: center;
+    margin: 3rem auto;
+
+    iframe{
+      width: 63rem;
+      height: 35rem;
+    }
+
+
+  }
+
+
+  @media (max-width: 500px){
+    iframe {
+
+    }
+  }
+`;
+
