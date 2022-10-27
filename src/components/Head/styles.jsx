@@ -15,12 +15,19 @@ export const Container = styled.div`
     width: 100%;
   }
 
+  .cart-icon {
+    width: 100px;
+  }
+
   .cart-container  {
     display: flex;
-    width: 1200px;
+    flex-direction: column;
+    right: 0;
     justify-content: flex-end;
+    align-items: center;
     margin: auto;
     padding: 5rem;
+    position: fixed;
 
 
   }
@@ -31,18 +38,37 @@ export const Container = styled.div`
   }
 
 
+
+  .nav-container {
+    display: flex;
+    margin: 1rem auto;
+    position: fixed;
+    top: 0;
+  }
+
+
+
   @media (max-width: 700px){
     flex-direction: column;
-    .logo {
-      display: block;
-      margin: auto;
+    justify-content: center;
+    width: 100%;
 
-    }
 
     .cart-container {
-      text-align: center;
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      font-size: 1rem;
+
 
     }
+
+    .cart-icon {
+      top: 0;
+      width: 75px;
+    }
+
+
   }
 
   @media (max-width: 500px){
@@ -50,6 +76,21 @@ export const Container = styled.div`
       width: 100%;
       margin: auto;
     }
+
+    .cart-container {
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      font-size: 1rem;
+
+
+    }
+
+    .cart-icon {
+      top: 0;
+      width: 55px;
+    }
+
   }
 
 

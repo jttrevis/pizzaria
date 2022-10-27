@@ -60,7 +60,9 @@ export const Content = styled.div`
     }
   }
 
-
+  .cart-icon {
+    width: 100px;
+  }
 
   .logo {
     width: 300px;
@@ -74,10 +76,7 @@ export const Content = styled.div`
       font-size: 2rem;
 
     }
-    img {
-      display: none;
 
-    }
 
 
 

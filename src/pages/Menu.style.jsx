@@ -9,22 +9,25 @@ export const Container = styled.div`
     color: white;
     margin: 0;
 
-  @media (max-width: 500px){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 1.8rem;
 
 
-
-  }
-
-  .logo {
+    .logo {
     width: 20rem;
     padding: 2rem;
     margin: 2rem;
 
+
+  @media (max-width: 500px){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
   }
+
+  }
+
+
 
 `;
 
@@ -53,8 +56,8 @@ export const Content = styled.div`
   }
 
   @media (max-width: 640px) {
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
     gap: 3rem;
   }
 
