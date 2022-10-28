@@ -29,7 +29,7 @@ export const Head = () => {
       <div className='cart-container'>
         <a onClick={hanldeOpenCartModal} ><img className='cart-icon' src={cart} alt="logo cart" ></img></a>
         <span>Item(s) : {qty}  </span>
-        <span>Total : {new Intl.NumberFormat('en-GB', {
+        <span>Subtotal : {new Intl.NumberFormat('en-GB', {
                           style: 'currency',
                           currency: 'GBP'
                       }).format(totalPrice)}</span>

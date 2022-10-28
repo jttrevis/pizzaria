@@ -6,7 +6,15 @@ import { Menu } from "../components/Menu"
 import { Toaster } from 'react-hot-toast'
 import { Video } from '../components/Video'
 
+
+
+
 export const Home = () => {
+
+
+
+
+
   return (
     <>
       <Toaster/>
@@ -15,6 +23,8 @@ export const Home = () => {
       <Menu />
       <Video />
       <Footer />
+
+
     </>
   )
 }

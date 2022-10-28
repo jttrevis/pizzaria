@@ -19,6 +19,8 @@ import { useStateContext } from '../../context/StateContext'
 
 
 
+
+
 const useStyles = makeStyles((theme) => ({
   card: {
 
@@ -55,6 +57,7 @@ export const PizzaCard = () => {
 
   const classes = useStyles()
 
+
   return (
 
 
@@ -89,9 +92,11 @@ export const PizzaCard = () => {
           <CardActions disableSpacing>
             <IconButton
             onClick={() => onAdd(item, qty)}
+
             className={classes.cardContent}
             aria-label="add to cart">
               <AddShoppingCartIcon
+
 
                />
             </IconButton>
@@ -101,9 +106,11 @@ export const PizzaCard = () => {
             variant="contained"
             href="#contained-buttons"
             onClick={() => onAdd(item, qty)}
+
             >
             <strong>£{item.price}</strong>
           </Button>
+
           </CardActions>
 
         </Card>
@@ -147,7 +154,7 @@ export const SidesCard = () => {
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
-          <IconButton onClick={() => onAdd(item, qty)} className={classes.cardContent} aria-label="add to favorites">
+          <IconButton onClick={() => onAdd(item, qty)} className={classes.cardContent} aria-label="add to cart">
             <AddShoppingCartIcon />
           </IconButton>
           <Button onClick={() => onAdd(item, qty)} className={classes.buttonCard} variant="contained"  href="#contained-buttons">
@@ -191,7 +198,7 @@ export const DrinksCard = () => {
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
-          <IconButton onClick={() => onAdd(item, qty)} className={classes.cardContent} aria-label="add to favorites">
+          <IconButton onClick={() => onAdd(item, qty)} className={classes.cardContent} aria-label="add to cart">
             <AddShoppingCartIcon />
           </IconButton>
           <Button onClick={() => onAdd(item, qty)} className={classes.buttonCard} variant="contained"  href="#contained-buttons">
