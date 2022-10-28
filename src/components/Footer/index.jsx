@@ -8,6 +8,7 @@ import whatsappImg from '../../assets/whatsapp.png'
 
 export const Footer = () => {
   return (
+    <>
     <Container>
       <Content id='contact'>
         <a href="https://www.instagram.com/"><img src={instagramImg} alt="instagram" /></a>
@@ -15,7 +16,10 @@ export const Footer = () => {
         <a href="https://www.whatsapp.com/"><img src={whatsappImg} alt="whatsapp" /></a>
       </Content>
 
+
     </Container>
+
+    </>
 
   )
 }

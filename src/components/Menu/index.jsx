@@ -21,7 +21,7 @@ export const  Menu = () => {
       </Content>
 
       <div >
-       <h3 className='text-mid'>Check our <Link to="/menu">Menu</Link> </h3>
+       <h3 className='text-mid'>Check our <Link className='menu-btn-home' to="/menu">Menu</Link> </h3>
       </div>
     </Container>
   )

@@ -35,12 +35,12 @@ export const Content = styled.div`
     padding: 50px;
   }
 
-  button{
+  .order-now-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
-  width: 80%;
+  width: 400px;
   font-size: 30px;
   font-weight: bold;
   background-color: var(--primary-color);
@@ -58,6 +58,7 @@ export const Content = styled.div`
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin: 0 auto;
 
     img {
       display: none;
@@ -71,9 +72,14 @@ export const Content = styled.div`
       font-size: 25px;
     }
 
-    button {
+    .order-now-btn {
       width: 90%;
       color: black;
+    }
+
+
+    @media (max-width: 700px){
+      margin: 0 auto;
     }
   }
 `

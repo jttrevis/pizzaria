@@ -13,11 +13,21 @@ export const Container = styled.div`
       padding: 80px;
     }
 
+    .menu-btn-home{
+      color: var(--primary-color);
+      transition: all 0.5s;
+      border-bottom: 2px solid var(--primary-color);
+
+      &:hover {
+        filter: brightness(0.5);
+      }
+    }
+
     @media (max-width: 500px){
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-left: 1.8rem;
+      padding-left: 1rem;
 
 
 
@@ -36,6 +46,10 @@ export const Content = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+
+
+
+
 
   @media (max-width: 1200px){
     grid-template-columns: repeat(2, 1fr);
