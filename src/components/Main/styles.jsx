@@ -1,26 +1,21 @@
 import styled from "styled-components";
 
-
 export const Container = styled.main`
   display: grid;
   background: black;
-
 `;
 
-
 export const Content = styled.div`
-    max-width: 1200px;
-    margin: 100px auto;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    color: white;
-    font-size: 40px;
-
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+  font-size: 40px;
 
   img {
     width: 40%;
-
   }
 
   div {
@@ -36,24 +31,23 @@ export const Content = styled.div`
   }
 
   .order-now-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 400px;
-  font-size: 30px;
-  font-weight: bold;
-  background-color: var(--primary-color);
-  border-radius: 10px;
-  transition: filter 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 400px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    transition: filter 0.3s;
 
-    &:hover{
+    &:hover {
       filter: brightness(0.7);
     }
   }
 
-
-  @media (max-width: 1100px){
+  @media (max-width: 1100px) {
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -77,9 +71,8 @@ export const Content = styled.div`
       color: black;
     }
 
-
-    @media (max-width: 700px){
+    @media (max-width: 700px) {
       margin: 0 auto;
     }
   }
-`
+`;

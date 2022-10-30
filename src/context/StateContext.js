@@ -1,50 +1,38 @@
-import React, { createContext, useContext, useState } from 'react'
-import { toast } from 'react-hot-toast';
+import React, { createContext, useContext, useState } from "react";
+import { toast } from "react-hot-toast";
 
-
-export const Context = createContext()
+export const Context = createContext();
 
 export const StateContext = ({ children }) => {
-
-  const [cartItems, setCartItems] = useState([])
-  const [totalPrice, setTotalPrice] = useState(0)
-  const [totalQuantities, setTotalQuantities] = useState(0)
-  const [qty, setQty] = useState(0)
-
-
-
-
+  const [cartItems, setCartItems] = useState([]);
+  const [totalPrice, setTotalPrice] = useState(0);
+  const [totalQuantities, setTotalQuantities] = useState(0);
+  const [qty, setQty] = useState(0);
 
   const onAdd = (product) => {
+    setTotalPrice((prevTotalPrice) => prevTotalPrice + product.price);
+    setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + 1);
 
-    setTotalPrice((prevTotalPrice) => prevTotalPrice + product.price)
-    setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + 1)
-
-    setCartItems([...cartItems, { ...product }])
-    setQty(cartItems.length + 1)
+    setCartItems([...cartItems, { ...product }]);
+    setQty(cartItems.length + 1);
     toast(`1 ${product.name} added to the cart`, {
-      icon: '✅',
+      icon: "✅",
     });
-
-
-  }
-
-
+  };
 
   const onRemove = (productRemove) => {
+    const newCartItems = cartItems.filter(
+      (product) => product !== productRemove
+    );
 
-    const newCartItems = cartItems.filter((product) => product !== productRemove)
-
-    setTotalPrice((prevTotalPrice) => prevTotalPrice - productRemove.price)
-    setTotalQuantities(prevTotalQuantities => prevTotalQuantities - 1)
-    setCartItems(newCartItems)
-    setQty(cartItems.length - 1)
+    setTotalPrice((prevTotalPrice) => prevTotalPrice - productRemove.price);
+    setTotalQuantities((prevTotalQuantities) => prevTotalQuantities - 1);
+    setCartItems(newCartItems);
+    setQty(cartItems.length - 1);
     if (cartItems.length === 0) {
-      setTotalPrice(0)
+      setTotalPrice(0);
     }
-
-  }
-
+  };
 
   return (
     <Context.Provider
@@ -54,17 +42,12 @@ export const StateContext = ({ children }) => {
         totalQuantities,
         qty,
         onAdd,
-        onRemove
-
+        onRemove,
       }}
     >
       {children}
     </Context.Provider>
-  )
-}
+  );
+};
 
-
-export const useStateContext = () => useContext(Context)
-
-
-
+export const useStateContext = () => useContext(Context);

@@ -1,15 +1,11 @@
-import styled from 'styled-components'
-
+import styled from "styled-components";
 
 export const Container = styled.div`
-
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   max-width: 100vw;
   background: black;
-
-
 
   .logo {
     width: 100%;
@@ -19,7 +15,7 @@ export const Container = styled.div`
     width: 100px;
   }
 
-  .cart-container  {
+  .cart-container {
     display: flex;
     flex-direction: column;
     right: 0;
@@ -28,16 +24,12 @@ export const Container = styled.div`
     margin: auto;
     padding: 5rem;
     position: fixed;
-
-
   }
 
   a {
     cursor: pointer;
     color: white;
   }
-
-
 
   .nav-container {
     display: flex;
@@ -46,32 +38,25 @@ export const Container = styled.div`
     top: 0;
   }
 
-
-
-  @media (max-width: 700px){
+  @media (max-width: 700px) {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-
 
     .cart-container {
       width: 20%;
       display: flex;
       justify-content: center;
       font-size: 1rem;
-
-
     }
 
     .cart-icon {
       top: 0;
       width: 75px;
     }
-
-
   }
 
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     .logo {
       width: 100%;
       margin: auto;
@@ -82,18 +67,11 @@ export const Container = styled.div`
       display: flex;
       justify-content: center;
       font-size: 1rem;
-
-
     }
 
     .cart-icon {
       top: 0;
       width: 55px;
     }
-
   }
-
-
-
-
 `;

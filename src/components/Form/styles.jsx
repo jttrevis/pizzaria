@@ -1,5 +1,4 @@
-import styled from 'styled-components'
-
+import styled from "styled-components";
 
 export const FormContainer = styled.form`
   display: grid;
@@ -17,18 +16,18 @@ export const FormContainer = styled.form`
     gap: 0.5rem;
     width: 70%;
 
-    input{
+    input {
       height: 2rem;
       border: none;
-      border-radius: 0.20rem;
+      border-radius: 0.2rem;
       padding: 0.5rem;
     }
 
-    textarea{
+    textarea {
       padding: 0.5rem;
     }
 
-    button{
+    button {
       background-color: var(--primary-color);
       border-radius: 0.25rem;
       transition: filter 0.3s;
@@ -37,51 +36,28 @@ export const FormContainer = styled.form`
       font-size: 1rem;
       margin-top: 1rem;
 
-
-
-
-      &:hover{
+      &:hover {
         filter: brightness(0.7);
       }
     }
 
-
     img {
       width: 100%;
-
     }
-
-
   }
 
-
-
-
-
-
   .adress {
-
     font-size: 1.5rem;
     text-align: center;
     color: var(--primary-color);
-
-
   }
 
-
-
-
-  @media (max-width: 1200px){
+  @media (max-width: 1200px) {
     grid-template-columns: 1fr;
     height: 100vh;
 
-
-
-
-
     form {
       margin: 0 auto;
-
     }
 
     .mapa {
@@ -89,45 +65,33 @@ export const FormContainer = styled.form`
       justify-items: center;
       align-items: center;
       width: 80%;
-
-
     }
-
 
     .adress {
       font-size: 1rem;
     }
-
   }
-
-
-`
+`;
 
 export const Content = styled.div`
-    max-width: 100%;
+  max-width: 100%;
 
-    background: black;
-    font-weight: bold;
-    font-size: 16px;
-
+  background: black;
+  font-weight: bold;
+  font-size: 16px;
 
   div {
     text-align: center;
     margin: 3rem auto;
 
-    iframe{
+    iframe {
       width: 63rem;
       height: 35rem;
     }
-
-
   }
 
-
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     iframe {
-
     }
   }
 `;
-

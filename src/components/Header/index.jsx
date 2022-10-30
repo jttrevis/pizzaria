@@ -1,46 +1,42 @@
-import React, { useState } from "react"
-import { Banner, Container, Content } from "./styles"
-import cart from '../../assets/cart.png'
-import { Link } from 'react-router-dom'
-import { CartModal } from '../CartModal'
+import React, { useState } from "react";
+import { Banner, Container, Content } from "./styles";
+import cart from "../../assets/cart.png";
+import { Link } from "react-router-dom";
+import { CartModal } from "../CartModal";
 
-import logoImg from '../../assets/logo-no-background.png'
+import logoImg from "../../assets/logo-no-background.png";
 
-
-
-
-
-export const  Header = () => {
-  const [isCartModalOpen, setIsCartModalOpen] = useState(false)
-
+export const Header = () => {
+  const [isCartModalOpen, setIsCartModalOpen] = useState(false);
 
   function hanldeOpenCartModal() {
-    setIsCartModalOpen(true)
+    setIsCartModalOpen(true);
   }
 
   function hanldeCloseCartModal() {
-    setIsCartModalOpen(false)
+    setIsCartModalOpen(false);
   }
 
   return (
     <Container>
-      <Content className='content'>
+      <Content className="content">
         <ul>
           <li>
-            <Link  to="/">Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link  to="/menu">Menu</Link>
+            <Link to="/menu">Menu</Link>
           </li>
           <div>
-             <img className="logo" src={logoImg} alt="pizzaria logo" ></img>
+            <img className="logo" src={logoImg} alt="pizzaria logo"></img>
           </div>
           <li>
             <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <Link onClick={hanldeOpenCartModal} ><img className='cart-icon' src={cart} alt="logo cart" ></img></Link>
-
+            <Link onClick={hanldeOpenCartModal}>
+              <img className="cart-icon" src={cart} alt="logo cart"></img>
+            </Link>
           </li>
         </ul>
 
@@ -50,11 +46,11 @@ export const  Header = () => {
           <h2>120 years of experencie </h2>
         </Banner>
         <CartModal
-        ariaHideApp={false}
-        isOpen={isCartModalOpen}
-        onRequestClose={hanldeCloseCartModal}
+          ariaHideApp={false}
+          isOpen={isCartModalOpen}
+          onRequestClose={hanldeCloseCartModal}
         />
       </Content>
     </Container>
-  )
-}
+  );
+};

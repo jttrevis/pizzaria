@@ -1,5 +1,4 @@
-import styled from 'styled-components'
-
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: block;
@@ -10,27 +9,23 @@ export const Container = styled.div`
   background-color: black;
   color: white;
 
-  .item-cart{
+  .item-cart {
     margin: 1rem;
     width: 150px;
     border: 1px solid var(--primary-color);
-
   }
 
   img {
     display: flex;
-
   }
 
   .item-container {
     display: flex;
 
-    border: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
     border-radius: 0.25rem;
     margin: 1rem;
   }
-
-
 
   .remove {
     display: flex;
@@ -44,40 +39,34 @@ export const Container = styled.div`
     tab-size: 50px;
   }
 
-
   .item-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-
   }
 
   .total {
-      display: flex;
-      justify-content: flex-end;
-      margin-right: 5rem;
-    }
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+  }
 
   .btn-checkout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 100%;
-  font-size: 15px;
-  font-weight: bold;
-  background-color: var(--primary-color);
-  border-radius: 10px;
-  transition: filter 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    transition: filter 0.3s;
 
-
-
-  &:hover{
+    &:hover {
       filter: brightness(0.7);
     }
   }
-
-
-`
+`;

@@ -1,7 +1,6 @@
-import styled from 'styled-components'
-import pizzaBG from '../../assets/pizzas.jpg'
-import pizzaBG02 from '../../assets/pizzaBG6.jpg'
-
+import styled from "styled-components";
+import pizzaBG from "../../assets/pizzas.jpg";
+import pizzaBG02 from "../../assets/pizzaBG6.jpg";
 
 export const Container = styled.header`
   background-image: url(${pizzaBG});
@@ -12,14 +11,12 @@ export const Container = styled.header`
   display: flex;
   width: 100%;
 
-
-  @media (max-width: 640px){
+  @media (max-width: 640px) {
     background-image: url(${pizzaBG02});
     background-size: cover;
     max-width: 100vh;
   }
 `;
-
 
 export const Content = styled.div`
   max-width: 100%;
@@ -83,16 +80,12 @@ export const Content = styled.div`
 
 `;
 
-
 export const Banner = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 120px auto;
-
-
-
 
   span {
     font-size: 25px;
@@ -105,27 +98,20 @@ export const Banner = styled.div`
     color: var(--primary-color);
   }
 
-  h2{
+  h2 {
     text-decoration: underline;
     font-size: 30px;
   }
 
   @media (max-width: 1210px) {
-
-
     h1 {
       display: none;
-
     }
   }
 
-  @media (max-width: 1200px){
-    h1{
+  @media (max-width: 1200px) {
+    h1 {
       font-size: 10rem;
     }
   }
 `;
-
-
-
-
