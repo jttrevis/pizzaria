@@ -9,7 +9,7 @@ This project simulates a Pizzeria website, where you can choose between differen
 
 ### Features:
 
-- Navigate through the menu on multiple pages.
+- Navigate through the navbar  on multiple pages.
 - Add and remove different types of products etc...
 - Check the localization on Google Maps.
 - Check the Website [Here](https://pizzaria-trevisol.vercel.app/).
