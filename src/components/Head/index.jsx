@@ -28,7 +28,7 @@ export const Head = () => {
           </Link>
         </div>
         <div className="cart-container">
-          <a onClick={hanldeOpenCartModal}>
+          <a href="#/cart" onClick={hanldeOpenCartModal}>
             <img className="cart-icon" src={cart} alt="logo cart"></img>
           </a>
           <span>Item(s) : {qty} </span>
