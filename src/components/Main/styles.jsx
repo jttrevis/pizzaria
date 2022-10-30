@@ -67,12 +67,11 @@ export const Content = styled.div`
     }
 
     .order-now-btn {
-      width: 90%;
+      width: 100%;
       color: black;
     }
 
     @media (max-width: 700px) {
-      margin: 0 auto;
     }
   }
 `;
