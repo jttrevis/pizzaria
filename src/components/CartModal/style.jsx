@@ -69,4 +69,15 @@ export const Container = styled.div`
       filter: brightness(0.7);
     }
   }
+
+  @media (max-width: 768px) {
+    .item-cart {
+      display: none;
+    }
+
+    .remove {
+      border: none;
+      padding: 0;
+    }
+  }
 `;

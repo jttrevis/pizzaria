@@ -1,5 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
-
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -56,6 +55,7 @@ body{
     img{
       width: 100%;
     }
-  }
 
-`
+
+
+`;

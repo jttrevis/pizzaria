@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import pizzaBG from "../../assets/pizzas.jpg";
-import pizzaBG02 from "../../assets/pizzaBG6.jpg";
 
 export const Container = styled.header`
   background-image: url(${pizzaBG});

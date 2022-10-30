@@ -63,15 +63,19 @@ export const Container = styled.div`
     }
 
     .cart-container {
-      width: 20%;
+      width: 100vw;
       display: flex;
-      justify-content: center;
-      font-size: 1rem;
+      justify-content: flex-end;
+      align-items: flex-end;
+      font-size: 0.75rem;
+      float: right;
+      top: 6px;
+      right: 6px;
+      padding: 0;
     }
 
     .cart-icon {
-      top: 0;
-      width: 55px;
+      width: 50px;
     }
   }
 `;
