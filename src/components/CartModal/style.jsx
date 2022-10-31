@@ -37,6 +37,7 @@ export const Container = styled.div`
     width: 5rem;
     height: 100%;
     tab-size: 50px;
+    border: none;
   }
 
   .item-text {

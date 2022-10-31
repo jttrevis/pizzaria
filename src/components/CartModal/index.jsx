@@ -42,7 +42,7 @@ export const CartModal = ({ item, isOpen, onRequestClose }) => {
         <div className="total">
           <h3>
             Subtotal:{" "}
-            {new Intl.NumberFormat("en-GB", {
+            {new Intl.NumberFormat("en-US", {
               style: "currency",
               currency: "GBP",
             }).format(totalPrice)}
