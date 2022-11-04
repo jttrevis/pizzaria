@@ -11,7 +11,7 @@ export const Container = styled.header`
   display: flex;
 
   @media (max-width: 640px) {
-    background-image: url(${pizzaBG2});
+    background-image: url(${require("../../assets/pizzaMobile.jpg")}));
     position: relative;
     background-size: cover;
     width: 100vw;
