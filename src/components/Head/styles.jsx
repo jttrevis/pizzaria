@@ -11,6 +11,12 @@ export const Container = styled.div`
     width: 100%;
   }
 
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .cart-icon {
     width: 100px;
   }
