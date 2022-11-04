@@ -9,12 +9,12 @@ export const Container = styled.header`
 
   background-attachment: fixed;
   display: flex;
-  width: 100%;
 
   @media (max-width: 640px) {
     background-image: url(${pizzaBG2});
+    position: relative;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
   }
 `;
 
