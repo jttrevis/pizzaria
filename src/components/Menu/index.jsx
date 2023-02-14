@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Content } from "./styles";
 
-import { PizzaCard } from "../Card";
 import { Link } from "react-router-dom";
+import { Card } from "../Card/Cards";
 
 export const Menu = () => {
   return (
@@ -10,9 +10,11 @@ export const Menu = () => {
       <div className="text-mid">
         <h3>Offers</h3>
       </div>
-      <Content>
-        <PizzaCard />
-      </Content>
+
+      {/* <PizzaCard /> */}
+      <div>
+        <Card />
+      </div>
 
       <div>
         <h3 className="text-mid">

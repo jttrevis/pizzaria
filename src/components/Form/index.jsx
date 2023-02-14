@@ -32,7 +32,6 @@ export const Form = () => {
           ></iframe>
         </div>
       </Content>
-      <Footer />
     </>
   );
 };

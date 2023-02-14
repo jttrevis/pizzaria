@@ -1,9 +1,8 @@
 import React from "react";
 import { Container, Content } from "./style";
-
-import instagramImg from "../../assets/instagram.png";
-import facebookImg from "../../assets/facebook.png";
-import whatsappImg from "../../assets/whatsapp.png";
+import jrLogo from "../../assets/logos/JuniorLogo1.png";
+import { AiFillCopyrightCircle } from "react-icons/ai";
+import { FaFacebookMessenger, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -11,15 +10,19 @@ export const Footer = () => {
       <Container>
         <Content id="contact">
           <a href="https://www.instagram.com/">
-            <img src={instagramImg} alt="instagram" />
+            <FaInstagram />
           </a>
           <a href="https://www.facebook.com/">
-            <img src={facebookImg} alt="facebook" />
+            <FaFacebookMessenger />
           </a>
           <a href="https://www.whatsapp.com/">
-            <img src={whatsappImg} alt="whatsapp" />
+            <FaWhatsapp />
           </a>
         </Content>
+        <img src={jrLogo} alt="" />
+        <p>
+          <AiFillCopyrightCircle /> JR.TREVIS Web Developer.All rights reserved.
+        </p>
       </Container>
     </>
   );

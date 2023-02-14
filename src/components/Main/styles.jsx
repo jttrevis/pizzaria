@@ -1,8 +1,11 @@
 import styled from "styled-components";
-
+import bgImage from "../../assets/pizzas.jpg";
 export const Container = styled.main`
   display: grid;
-  background: black;
+  background-image: url(${bgImage});
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 `;
 
 export const Content = styled.div`

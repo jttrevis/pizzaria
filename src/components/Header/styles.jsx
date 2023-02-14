@@ -1,117 +1,95 @@
 import styled from "styled-components";
-import pizzaBG from "../../assets/pizzas.jpg";
-import pizzaBG2 from "../../assets/pizzaMobile.jpg";
 
-export const Container = styled.header`
-  background-image: url(${pizzaBG});
-  background-size: cover;
+export const HeaderStyles = styled.header`
+  position: fixed;
+  width: 100%;
   color: white;
-
-  background-attachment: fixed;
   display: flex;
-
-  @media (max-width: 640px) {
-    background-image: url(${require("../../assets/pizzaMobile.jpg")}));
-    position: relative;
-    background-size: cover;
-    width: 100vw;
-  }
-`;
-
-export const Content = styled.div`
-  max-width: 100%;
-  margin: 100px auto;
-
-
-
-
-  ul{
-    align-items: center;
-    display: flex;
-    font-size: 28px;
-    color: white;
-    text-decoration: none;
-
-
-
-    li {
-      display: flex;
-
-      a{
-        text-decoration: none;
-        margin: 50px;
-        color: white;
-
-        transition: color 0.2s;
-
-
-
-        &:hover{
-          color: var(--primary-color);
-          border-bottom: 2px solid var(--primary-color);
-        }
-      }
-
-
-
-    }
-  }
-
-  .cart-icon {
-    width: 100px;
-  }
-
-  .logo {
-    width: 300px;
-
-  }
-
-  @media (max-width: 950px){
-    ul {
-      display: flex;
-      flex-direction: column;
-      font-size: 2rem;
-
-    }
-
-
-
-
-
-`;
-
-export const Banner = styled.div`
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 120px auto;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
 
-  span {
-    font-size: 25px;
-    text-decoration: underline;
+  > a > img {
+    width: 60px;
   }
+`;
 
-  h1 {
-    font-size: 110px;
-    padding: 16px;
-    color: var(--primary-color);
+export const MobileMenu = styled.label`
+  display: none;
+
+  @media (max-width: 600px) {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-block: 1rem;
+    cursor: pointer;
+
+    > span {
+      border-top: 0.125rem solid;
+      width: 1.25rem;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+      }
+    }
   }
+`;
 
-  h2 {
-    text-decoration: underline;
-    font-size: 30px;
-  }
+export const Menu = styled.ul`
+  color: white;
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
 
-  @media (max-width: 1210px) {
-    h1 {
-      display: none;
+  a {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    transition: all 0.5s;
+
+    &:nth-child(3) {
+      padding: 0;
+    }
+
+    &:hover {
+      background-color: gold;
+      color: #000;
     }
   }
 
-  @media (max-width: 1200px) {
-    h1 {
-      font-size: 10rem;
+  @media (max-width: 600px) {
+    display: ${(props) => (props.isOpen ? "flex" : "none")};
+
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    height: calc(100vh - 4.6875rem);
+    z-index: 1;
+
+    a {
+      width: 100vw;
+      padding: 1rem 0;
+      margin-inline: 1rem;
+      border-bottom: 0.0625rem solid;
+      border-radius: 0;
     }
+  }
+
+  @media (min-width: 601px) {
+    display: flex;
   }
 `;

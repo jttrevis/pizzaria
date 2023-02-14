@@ -1,18 +1,19 @@
 import React from "react";
-import { Head } from "../components/Head";
+
 import { Footer } from "../components/Footer";
 import { Toaster } from "react-hot-toast";
 import { Content, Container } from "./Menu.style";
-import { DrinksCard, PizzaCard, SidesCard } from "../components/Card";
+
+import { Card, SidesCard, DrinksCard } from "../components/Card/Cards";
+import InViewSection from "../components/inViewSection/inViewSection";
 
 export const MenuPage = () => {
   return (
     <>
       <Toaster />
       <Container>
-        <Head />
         <Content>
-          <PizzaCard />
+          <Card />
         </Content>
         <Content>
           <SidesCard />
@@ -20,7 +21,6 @@ export const MenuPage = () => {
         <Content>
           <DrinksCard />
         </Content>
-        <Footer />
       </Container>
     </>
   );

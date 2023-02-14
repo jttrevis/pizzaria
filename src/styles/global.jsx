@@ -8,13 +8,25 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
-
+  text-decoration: none;
 
 }
 
 
+::-webkit-scrollbar {
+  width:10px;
+  height: 10px;
 
+  }
+
+::-webkit-scrollbar-track {
+  background: #111;
+  }
+
+::-webkit-scrollbar-thumb {
+
+  background: gold;
+  }
 
 :root {
   --primary-color: #D3C224;
@@ -27,34 +39,11 @@ button {
 
 body{
   -webkit-font-smoothing: antialiased;
+  background-color: black;
+
 
 
 }
-
-  .react-modal-overlay{
-    background: rgba(0, 0, 0, 0.5);
-
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .react-modal-content{
-    width: 100%;
-    max-width: 800px;
-    background: black;
-    padding: 3rem;
-    position: relative;
-    border-radius: 0.25rem;
-
-    img{
-      width: 100%;
-    }
 
 
 
