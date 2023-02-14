@@ -9,21 +9,21 @@ export const Container = styled.main`
 `;
 
 export const Content = styled.div`
-  max-width: 1200px;
   margin: 100px auto;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   color: white;
   font-size: 2.3rem;
   text-align: center;
 
   img {
-    width: 40%;
+    width: 300px;
+    margin-right: 5rem;
+    border-radius: 15px;
   }
 
   div {
-    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +32,10 @@ export const Content = styled.div`
   span {
     font-size: 5rem;
     padding: 50px;
+  }
+
+  p {
+    padding: 1rem;
   }
 
   button {

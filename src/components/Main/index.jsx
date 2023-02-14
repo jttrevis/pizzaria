@@ -14,9 +14,7 @@ export const Main = () => {
         <InViewSection>
           <div id="main">
             <span>Only Today!</span>
-
-            <p>Large Pizza + 2lt Coca-Cola</p>
-            <p>for only:</p>
+            <p>Large Pizza + 2lt Coca-Cola for only:</p>
             <span>£19.99</span>
             <Link to="/menu">
               <button>Order Now!</button>
