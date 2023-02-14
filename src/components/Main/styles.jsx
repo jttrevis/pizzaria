@@ -16,6 +16,7 @@ export const Content = styled.div`
   align-items: center;
   color: white;
   font-size: 40px;
+  text-align: center;
 
   img {
     width: 40%;
@@ -33,17 +34,19 @@ export const Content = styled.div`
     padding: 50px;
   }
 
-  .order-now-btn {
+  button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    width: 400px;
+
+    width: 100%;
+    padding: 15px;
     font-size: 30px;
     font-weight: bold;
-    background-color: var(--primary-color);
+    background-color: gold;
     border-radius: 10px;
     transition: filter 0.3s;
+    border: none;
 
     &:hover {
       filter: brightness(0.7);

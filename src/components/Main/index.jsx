@@ -19,7 +19,7 @@ export const Main = () => {
             <p>for only:</p>
             <span>£19.99</span>
             <Link to="/menu">
-              <button className="order-now-btn">Order Now!</button>
+              <button>Order Now!</button>
             </Link>
           </div>
         </InViewSection>
