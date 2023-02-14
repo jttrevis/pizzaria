@@ -55,7 +55,7 @@ export const Content = styled.div`
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 6rem auto;
 
     img {
       display: none;
@@ -66,6 +66,10 @@ export const Content = styled.div`
     }
 
     p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       font-size: 25px;
     }
 
@@ -75,6 +79,8 @@ export const Content = styled.div`
     }
 
     @media (max-width: 700px) {
+      display: flex;
+      width: 100vw;
     }
   }
 `;
