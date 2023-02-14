@@ -9,9 +9,15 @@ export const HeaderStyles = styled.header`
   justify-content: space-between;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
 
   > a > img {
     width: 60px;
+    transition: all 0.5s;
+
+    &:hover {
+      scale: 1.5;
+    }
   }
 `;
 

@@ -31,9 +31,10 @@ export const BackToTopButton = () => {
             bottom: 6,
             right: 5,
             background: "transparent",
+            border: "none",
           }}
         >
-          <BsFillArrowUpCircleFill size={45} color={"white"} />
+          <BsFillArrowUpCircleFill size={45} color={"gold"} />
         </button>
       )}
     </div>
