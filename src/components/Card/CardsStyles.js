@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Cards = styled.div`
-  background-color: #212121;
+  background-color: #000000;
   border-radius: 1rem;
   border: #212121 0.2rem solid;
   transition: all 0.4s ease-in;
