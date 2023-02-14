@@ -15,7 +15,7 @@ export const Content = styled.div`
   justify-content: left;
   align-items: center;
   color: white;
-  font-size: 40px;
+  font-size: 2.3rem;
   text-align: center;
 
   img {
@@ -30,7 +30,7 @@ export const Content = styled.div`
     align-items: center;
   }
   span {
-    font-size: 90px;
+    font-size: 5rem;
     padding: 50px;
   }
 
@@ -41,7 +41,7 @@ export const Content = styled.div`
 
     width: 100%;
     padding: 15px;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
     background-color: gold;
     border-radius: 10px;
@@ -65,7 +65,7 @@ export const Content = styled.div`
     }
 
     span {
-      font-size: 70px;
+      font-size: 3rem;
     }
 
     p {
