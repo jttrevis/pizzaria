@@ -25,6 +25,13 @@ export const Cards = styled.div`
     align-items: center;
   }
 
+  > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
   img {
     object-fit: cover;
     width: 100%;

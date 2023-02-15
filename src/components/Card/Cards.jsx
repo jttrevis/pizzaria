@@ -3,6 +3,7 @@ import { Container, Cards } from "./CardsStyles";
 import pizzasData from "../../pizzasData.json";
 import { useStateContext } from "../../context/StateContext";
 import InViewSection from "../inViewSection/inViewSection";
+import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
 
 const pizzaDb = pizzasData.pizzas;
 const sidesDb = pizzasData.sides;
@@ -30,9 +31,17 @@ export const Card = (props) => {
               <div>
                 <p>{item.ingredients}</p>
                 <div>
-                  <button onClick={() => onRemove(item)}>-</button>
+                  <AiOutlineMinusCircle
+                    size={30}
+                    color="gold"
+                    onClick={() => onRemove(item)}
+                  ></AiOutlineMinusCircle>
                   <span>{itemCount}</span>
-                  <button onClick={() => onAdd(item)}>+</button>
+                  <AiOutlinePlusCircle
+                    size={30}
+                    color="gold"
+                    onClick={() => onAdd(item)}
+                  ></AiOutlinePlusCircle>
                 </div>
 
                 <button onClick={() => onAdd(item)}>£{item.price}</button>
@@ -66,9 +75,17 @@ export const SidesCard = () => {
               <div>
                 <p>{item.ingredients}</p>
                 <div>
-                  <button onClick={() => onRemove(item)}>-</button>
+                  <AiOutlineMinusCircle
+                    size={30}
+                    color="gold"
+                    onClick={() => onRemove(item)}
+                  ></AiOutlineMinusCircle>
                   <span>{itemCount}</span>
-                  <button onClick={() => onAdd(item)}>+</button>
+                  <AiOutlinePlusCircle
+                    size={30}
+                    color="gold"
+                    onClick={() => onAdd(item)}
+                  ></AiOutlinePlusCircle>
                 </div>
 
                 <button onClick={() => onAdd(item)}>£{item.price}</button>
@@ -102,9 +119,17 @@ export const DrinksCard = () => {
               <div>
                 <p>{item.ingredients}</p>
                 <div>
-                  <button onClick={() => onRemove(item)}>-</button>
+                  <AiOutlineMinusCircle
+                    size={30}
+                    color="gold"
+                    onClick={() => onRemove(item)}
+                  ></AiOutlineMinusCircle>
                   <span>{itemCount}</span>
-                  <button onClick={() => onAdd(item)}>+</button>
+                  <AiOutlinePlusCircle
+                    size={30}
+                    color="gold"
+                    onClick={() => onAdd(item)}
+                  ></AiOutlinePlusCircle>
                 </div>
 
                 <button onClick={() => onAdd(item)}>£{item.price}</button>
