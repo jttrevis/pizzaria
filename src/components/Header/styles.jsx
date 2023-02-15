@@ -80,7 +80,8 @@ export const Menu = styled.ul`
     position: absolute;
     top: 6rem;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background-color: #000;
     text-align: center;
     width: 100%;
     height: calc(100vh - 4.6875rem);
@@ -90,7 +91,7 @@ export const Menu = styled.ul`
       width: 100vw;
       padding: 1rem 0;
       margin-inline: 1rem;
-      border-bottom: 0.0625rem solid;
+      border-bottom: 0.0625rem solid gold;
       border-radius: 0;
     }
   }

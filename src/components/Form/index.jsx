@@ -2,7 +2,6 @@ import React from "react";
 
 import { Content, FormContainer } from "./styles";
 
-
 export const Form = () => {
   return (
     <>
@@ -17,7 +16,7 @@ export const Form = () => {
           <textarea placeholder="Message..." type="message" rows="10" />
           <button>Send</button>
         </form>
-        <div className="adress">
+        <div>
           <h1>Send a Feedback</h1>
           <p>Postcode: XXX XXX</p>
           <p>City: XXXXXX</p>

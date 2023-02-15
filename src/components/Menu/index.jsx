@@ -17,11 +17,8 @@ export const Menu = () => {
       </div>
 
       <div>
-        <h3 className="text-mid">
-          Check our{" "}
-          <Link className="menu-btn-home" to="/menu">
-            Menu
-          </Link>{" "}
+        <h3>
+          Check our <Link to="/menu">Menu</Link>{" "}
         </h3>
       </div>
     </Container>

@@ -1,98 +1,96 @@
 import styled from "styled-components";
 
 export const FormContainer = styled.form`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  background: black;
-  height: 100vh;
-  padding-top: 6rem;
+  align-items: center;
+  padding-top: 8rem;
+  width: 100%;
+  height: 100%;
 
-  color: white;
+  > form {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    gap: 10px;
+    color: white;
 
-  form {
-    display: grid;
-    gap: 0.5rem;
-    width: 70%;
-
-    input {
+    > input {
       height: 2rem;
+      border-radius: 5px;
       border: none;
-      border-radius: 0.2rem;
-      padding: 0.5rem;
+      background: whitesmoke;
+      outline: none;
+      padding-left: 5px;
     }
 
     textarea {
-      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      background: whitesmoke;
+      outline: none;
+      padding-left: 5px;
     }
 
-    button {
-      background-color: var(--primary-color);
-      border-radius: 0.25rem;
-      transition: filter 0.3s;
-      height: 4rem;
+    > button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      padding: 10px;
+      font-size: 1.5rem;
       font-weight: bold;
-      font-size: 1rem;
-      margin-top: 1rem;
+      background-color: gold;
+      border-radius: 5px;
+      transition: filter 0.3s;
+      border: none;
 
       &:hover {
         filter: brightness(0.7);
       }
     }
-
-    img {
-      width: 100%;
-    }
+  }
+  > div {
+    color: gold;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
 
-  .adress {
-    font-size: 1.5rem;
-    text-align: center;
-    color: var(--primary-color);
-  }
-
-  @media (max-width: 1200px) {
-    grid-template-columns: 1fr;
-    height: 100vh;
-
-    form {
-      margin: 0 auto;
-    }
-
-    .mapa {
-      display: grid;
-      justify-items: center;
-      align-items: center;
-      width: 80%;
-    }
-
-    .adress {
-      font-size: 1rem;
-    }
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 
 export const Content = styled.div`
-  max-width: 100%;
+  display: flex;
+  padding: 5rem;
+  justify-content: center;
+  align-content: center;
 
-  background: black;
-  font-weight: bold;
-  font-size: 16px;
-
-  div {
-    text-align: center;
-    margin: 3rem auto;
-
-    iframe {
-      width: 63rem;
-      height: 35rem;
+  > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    > iframe {
+      width: 100%;
+      height: 400px;
+      max-width: 800px;
     }
   }
-
-  @media (max-width: 500px) {
-    iframe {
+  @media (max-width: 768px) {
+    > div {
+      width: 100vw;
+      iframe {
+        width: 100vw;
+        padding: 0;
+      }
     }
   }
 `;
