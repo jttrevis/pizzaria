@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Cards } from "./CardsStyles";
 
 import pizzasData from "../../pizzasData.json";
@@ -9,74 +8,111 @@ const pizzaDb = pizzasData.pizzas;
 const sidesDb = pizzasData.sides;
 const drinksDb = pizzasData.drinks;
 
-export const Card = () => {
-  const { qty, onAdd } = useStateContext();
+export const Card = (props) => {
+  const { cartItems, onAdd, onRemove } = useStateContext();
+
   return (
     <Container>
-      {pizzaDb.map((item, index) => (
-        <InViewSection key={item.id}>
-          <Cards>
-            <div>
-              <h1>{item.name}</h1>
-            </div>
-            <div>
-              <img src={item.image} alt="" />
-            </div>
-            <div>
-              <p>{item.ingredients}</p>
-              <button onClick={() => onAdd(item, qty)}>£{item.price}</button>
-            </div>
-          </Cards>
-        </InViewSection>
-      ))}
+      {pizzaDb.map((item, index) => {
+        const itemCount = cartItems
+          .filter((cartItem) => cartItem.id === item.id)
+          .reduce((acc, cartItem) => acc + cartItem.quantity, 0);
+
+        return (
+          <InViewSection key={item.id}>
+            <Cards>
+              <div>
+                <h1>{item.name}</h1>
+              </div>
+              <div>
+                <img src={item.image} alt="" />
+              </div>
+              <div>
+                <p>{item.ingredients}</p>
+                <div>
+                  <button onClick={() => onRemove(item)}>-</button>
+                  <span>{itemCount}</span>
+                  <button onClick={() => onAdd(item)}>+</button>
+                </div>
+
+                <button onClick={() => onAdd(item)}>£{item.price}</button>
+              </div>
+            </Cards>
+          </InViewSection>
+        );
+      })}
     </Container>
   );
 };
 
 export const SidesCard = () => {
-  const { qty, onAdd } = useStateContext();
+  const { cartItems, onAdd, onRemove } = useStateContext();
   return (
     <Container>
-      {sidesDb.map((item, index) => (
-        <InViewSection key={item.id}>
-          <Cards>
-            <div>
-              <h1>{item.name}</h1>
-            </div>
-            <div>
-              <img src={item.image} alt="" />
-            </div>
-            <div>
-              <p>{item.ingredients}</p>
-              <button onClick={() => onAdd(item, qty)}>£{item.price}</button>
-            </div>
-          </Cards>
-        </InViewSection>
-      ))}
+      {sidesDb.map((item, index) => {
+        const itemCount = cartItems
+          .filter((cartItem) => cartItem.id === item.id)
+          .reduce((acc, cartItem) => acc + cartItem.quantity, 0);
+
+        return (
+          <InViewSection key={item.id}>
+            <Cards>
+              <div>
+                <h1>{item.name}</h1>
+              </div>
+              <div>
+                <img src={item.image} alt="" />
+              </div>
+              <div>
+                <p>{item.ingredients}</p>
+                <div>
+                  <button onClick={() => onRemove(item)}>-</button>
+                  <span>{itemCount}</span>
+                  <button onClick={() => onAdd(item)}>+</button>
+                </div>
+
+                <button onClick={() => onAdd(item)}>£{item.price}</button>
+              </div>
+            </Cards>
+          </InViewSection>
+        );
+      })}
     </Container>
   );
 };
 
 export const DrinksCard = () => {
-  const { qty, onAdd } = useStateContext();
+  const { cartItems, onAdd, onRemove } = useStateContext();
   return (
     <Container>
-      {drinksDb.map((item, index) => (
-        <InViewSection key={item.id}>
-          <Cards>
-            <div>
-              <h1>{item.name}</h1>
-            </div>
-            <div>
-              <img src={item.image} alt="" />
-            </div>
-            <div>
-              <p>{item.ingredients}</p>
-              <button onClick={() => onAdd(item, qty)}>£{item.price}</button>
-            </div>
-          </Cards>
-        </InViewSection>
-      ))}
+      {drinksDb.map((item, index) => {
+        const itemCount = cartItems
+          .filter((cartItem) => cartItem.id === item.id)
+          .reduce((acc, cartItem) => acc + cartItem.quantity, 0);
+
+        return (
+          <InViewSection key={item.id}>
+            <Cards>
+              <div>
+                <h1>{item.name}</h1>
+              </div>
+              <div>
+                <img src={item.image} alt="" />
+              </div>
+              <div>
+                <p>{item.ingredients}</p>
+                <div>
+                  <button onClick={() => onRemove(item)}>-</button>
+                  <span>{itemCount}</span>
+                  <button onClick={() => onAdd(item)}>+</button>
+                </div>
+
+                <button onClick={() => onAdd(item)}>£{item.price}</button>
+              </div>
+            </Cards>
+          </InViewSection>
+        );
+      })}
     </Container>
   );
 };

@@ -1,12 +1,25 @@
 import { Container } from "./CartStyles";
 
-import { AiOutlineShopping } from "react-icons/ai";
+import {
+  AiOutlineShopping,
+  AiOutlinePlusCircle,
+  AiOutlineMinusCircle,
+} from "react-icons/ai";
 import { TiDeleteOutline } from "react-icons/ti";
 import { useStateContext } from "../context/StateContext";
 
-export const Cart = ({ item, isOpen, onRequestClose }) => {
-  const { totalPrice, totalQuantities, cartItems, onRemove } =
+export const Cart = () => {
+  const { totalPrice, totalQuantities, cartItems, onRemove, onAdd } =
     useStateContext();
+
+  const itemCount = (id) => {
+    return cartItems.reduce((total, item) => {
+      if (item.id === id) {
+        return total + item.quantity;
+      }
+      return total;
+    }, 0);
+  };
 
   return (
     <Container>
@@ -20,10 +33,25 @@ export const Cart = ({ item, isOpen, onRequestClose }) => {
           <div className="item-text">
             <h3>{item.name}</h3>
             <h4>£{item.price}</h4>
-            <span>Qty: 1x </span>
+            <div>
+              <AiOutlineMinusCircle
+                size={30}
+                color="gold"
+                onClick={() => onRemove(item)}
+              ></AiOutlineMinusCircle>
+
+              <AiOutlinePlusCircle
+                size={30}
+                color="gold"
+                onClick={() => onAdd(item)}
+              ></AiOutlinePlusCircle>
+            </div>
+            <span>
+              Qty:<span>{itemCount(item.id)}</span>{" "}
+            </span>
           </div>
           <button className="remove" onClick={() => onRemove(item)}>
-            <TiDeleteOutline size={25} />
+            <TiDeleteOutline size={30} />
           </button>
         </div>
       ))}

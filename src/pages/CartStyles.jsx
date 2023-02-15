@@ -48,12 +48,14 @@ export const Container = styled.div`
     justify-content: flex-end;
     margin-right: 5rem;
   }
-  .btn-checkout {
+  > button {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
     width: 100%;
+    max-width: 500px;
     font-size: 15px;
     font-weight: bold;
     background-color: var(--primary-color);
