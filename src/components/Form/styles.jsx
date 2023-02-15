@@ -8,6 +8,7 @@ export const FormContainer = styled.form`
   justify-content: center;
   background: black;
   height: 100vh;
+  padding-top: 6rem;
 
   color: white;
 

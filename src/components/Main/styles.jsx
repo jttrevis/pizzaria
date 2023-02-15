@@ -18,9 +18,10 @@ export const Content = styled.div`
   text-align: center;
 
   img {
-    width: 300px;
+    width: 600px;
     margin-right: 5rem;
     border-radius: 15px;
+    background: rgba(0, 0, 0, 0.3);
   }
 
   div {

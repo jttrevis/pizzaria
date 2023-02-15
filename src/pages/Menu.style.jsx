@@ -7,4 +7,13 @@ export const Container = styled.div`
 export const Content = styled.div`
   padding: 6rem 0;
   border-bottom: 1px solid gold;
+
+  > h1 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    font-size: 3rem;
+  }
 `;

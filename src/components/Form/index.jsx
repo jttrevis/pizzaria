@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Content, FormContainer } from "./styles";
-import { Footer } from "../Footer";
+
 
 export const Form = () => {
   return (

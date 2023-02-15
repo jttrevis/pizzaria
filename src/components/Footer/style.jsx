@@ -16,6 +16,10 @@ export const Container = styled.div`
     margin-bottom: 3rem;
     width: 100%;
   }
+
+  img {
+    width: 100px;
+  }
 `;
 
 export const Content = styled.div`

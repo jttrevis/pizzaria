@@ -5,42 +5,42 @@
       "name": "Pepperoni",
       "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
       "price": 19.99,
-      "image": "image/pizza2.jpg"
+      "image": "pizzasImages/p1.png"
     },
     {
       "id": 2,
       "name": "Portuguese",
       "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
       "price": 15.99,
-      "image": "image/pizza3.jpg"
+      "image": "pizzasImages/p2.png"
     },
     {
       "id": 3,
       "name": "Four Cheese",
       "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
       "price": 17.99,
-      "image": "image/pizza4.jpg"
+      "image": "pizzasImages/p3.png"
     },
     {
       "id": 4,
       "name": "Cheese & Olives",
       "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
       "price": 16.99,
-      "image": "image/pizza5.jpg"
+      "image": "pizzasImages/p4.png"
     },
     {
       "id": 5,
       "name": "Chicken & Cheese",
       "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
       "price": 15.59,
-      "image": "image/pizza6.jpg"
+      "image": "pizzasImages/p5.png"
     },
     {
       "id": 6,
       "name": "Chicken & Catupiry",
       "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
       "price": 19.99,
-      "image": "image/pizza7.jpg"
+      "image": "pizzasImages/p6.png"
     }
   ],
 
@@ -50,42 +50,42 @@
       "name": "Fries",
       "ingredients": "Potatoes Fries Classic",
       "price": 15.59,
-      "image": "image/fries1.jpg"
+      "image": "sidesImages/f1.png"
     },
     {
       "id": 2,
       "name": "Fries",
       "ingredients": "Potatoes Fries Classic",
       "price": 15.59,
-      "image": "image/fries2.jpg"
+      "image": "sidesImages/f2.png"
     },
     {
       "id": 3,
       "name": "Nachos",
       "ingredients": "Potatoes Fries Classic",
       "price": 15.59,
-      "image": "image/nachos.jpg"
+      "image": "sidesImages/n1.png"
     },
     {
       "id": 4,
       "name": "Wings",
       "ingredients": "Classic Chicken Wings",
       "price": 15.59,
-      "image": "image/wings1.jpg"
+      "image": "sidesImages/w1.png"
     },
     {
       "id": 5,
       "name": "Wings Fried",
       "ingredients": "Chicken Wings Fried",
       "price": 15.59,
-      "image": "image/wings2.jpg"
+      "image": "sidesImages/w3.png"
     },
     {
       "id": 6,
       "name": "Wings BBQ",
       "ingredients": "Classic Wings BBQ",
       "price": 15.59,
-      "image": "image/wings3.jpg"
+      "image": "sidesImages/w2.png"
     }
   ],
 
@@ -95,42 +95,36 @@
       "name": "Pepsi",
       "ingredients": "Pepsi 300ml",
       "price": 1.99,
-      "image": "image/refri1.jpg"
+      "image": "drinksImages/pepsi.png"
     },
     {
       "id": 2,
       "name": "Coca Cola",
       "ingredients": "Coca Cola 500ml",
       "price": 1.99,
-      "image": "image/refri2.jpg"
+      "image": "drinksImages/coca2.png"
     },
     {
       "id": 3,
       "name": "Coca Cola",
       "ingredients": "Coca Cola 300ml",
       "price": 1.99,
-      "image": "image/refri3.jpg"
+      "image": "drinksImages/coca.png"
     },
-    {
-      "id": 4,
-      "name": "Dr.Paper",
-      "ingredients": "Dr.Paper 300ml",
-      "price": 1.99,
-      "image": "image/refri4.jpg"
-    },
+
     {
       "id": 5,
       "name": "Budweiser",
       "ingredients": "Budweiser 300ml Long Neck",
       "price": 3.99,
-      "image": "image/beer2.jpg"
+      "image": "drinksImages/bud.png"
     },
     {
       "id": 6,
       "name": "Heineken",
       "ingredients": "Heineken 300ml Long Neck",
       "price": 4.59,
-      "image": "image/beer1.jpg"
+      "image": "drinksImages/hei.png"
     }
   ]
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Content } from "./styles";
+import { Container } from "./styles";
 
 import { Link } from "react-router-dom";
 import { Card } from "../Card/Cards";
