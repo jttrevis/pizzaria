@@ -22,6 +22,8 @@ export const HeaderStyles = styled.header`
   > a > img {
     width: 60px;
     transition: all 0.5s;
+    margin-left: 3rem;
+    height: 60px;
 
     &:hover {
       scale: 1.5;
@@ -35,7 +37,7 @@ export const MobileMenu = styled.label`
   @media (max-width: 600px) {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     padding-block: 1rem;
     cursor: pointer;
 
