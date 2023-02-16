@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Julee', sans-serif;
   text-decoration: none;
 
 }

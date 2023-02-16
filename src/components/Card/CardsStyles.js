@@ -13,6 +13,7 @@ export const Cards = styled.div`
   border-radius: 1rem;
   border: #212121 0.2rem solid;
   transition: all 0.4s ease-in;
+  text-align: center;
   width: 300px;
   color: #fff;
   box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
@@ -23,6 +24,15 @@ export const Cards = styled.div`
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+
+    h1 {
+      font-size: 2rem;
+      padding: 12px 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
   }
 
   > div > div {

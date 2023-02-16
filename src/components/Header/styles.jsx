@@ -37,6 +37,7 @@ export const MobileMenu = styled.label`
   @media (max-width: 600px) {
     display: flex;
     align-items: center;
+    font-size: 1.8rem;
     gap: 1rem;
     padding-block: 1rem;
     cursor: pointer;
@@ -88,7 +89,8 @@ export const Menu = styled.ul`
     align-items: center;
 
     position: absolute;
-    top: 6rem;
+    font-size: 1.7rem;
+    top: 4.7rem;
     left: 0;
     /* background-color: rgba(0, 0, 0, 0.7); */
     background-color: #000;
