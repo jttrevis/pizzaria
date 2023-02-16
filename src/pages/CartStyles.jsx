@@ -12,7 +12,8 @@ export const Container = styled.div`
   .item-cart {
     margin: 1rem;
     width: 150px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid gold;
+    border-radius: 15px;
   }
   img {
     display: flex;
@@ -20,7 +21,7 @@ export const Container = styled.div`
   }
   .item-container {
     display: flex;
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid gold;
     border-radius: 0.25rem;
     margin: 1rem;
   }
@@ -58,7 +59,7 @@ export const Container = styled.div`
     max-width: 500px;
     font-size: 15px;
     font-weight: bold;
-    background-color: var(--primary-color);
+    background-color: gold;
     border-radius: 10px;
     transition: filter 0.3s;
     &:hover {
