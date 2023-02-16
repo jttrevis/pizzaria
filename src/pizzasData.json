@@ -2,44 +2,44 @@
   "pizzas": [
     {
       "id": 1,
-      "name": "Pepperoni",
-      "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
-      "price": 19.99,
+      "name": "Margherita Pizza",
+      "ingredients": "mozzarella cheese, tomato sauce, fresh basil",
+      "price": 10.99,
       "image": "pizzasImages/p1.png"
     },
     {
       "id": 2,
-      "name": "Portuguese",
-      "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
-      "price": 15.99,
+      "name": "Pepperoni Pizza",
+      "ingredients": "mozzarella cheese, tomato sauce,pepperoni",
+      "price": 12.99,
       "image": "pizzasImages/p2.png"
     },
     {
       "id": 3,
-      "name": "Four Cheese",
-      "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
-      "price": 17.99,
+      "name": "Vegetarian Pizza",
+      "ingredients": "mozzarella cheese, tomato sauce, mushrooms, green peppers, onions",
+      "price": 11.99,
       "image": "pizzasImages/p3.png"
     },
     {
       "id": 4,
-      "name": "Cheese & Olives",
-      "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
-      "price": 16.99,
+      "name": "Meat Lover's Pizza",
+      "ingredients": "mozzarella cheese, tomato sauce, pepperoni, sausage, bacon",
+      "price": 14.99,
       "image": "pizzasImages/p4.png"
     },
     {
       "id": 5,
-      "name": "Chicken & Cheese",
-      "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
-      "price": 15.59,
+      "name": "White Pizza",
+      "ingredients": "mozzarella cheese, ricotta cheese, garlic, olive oil",
+      "price": 11.99,
       "image": "pizzasImages/p5.png"
     },
     {
       "id": 6,
-      "name": "Chicken & Catupiry",
-      "ingredients": "Pepperoni, sausage, chorizo, hotdog slices and mozzarella cheese. 252kcal, 1056kJ / large slice / classic crust.",
-      "price": 19.99,
+      "name": "BBQ Chicken Pizza",
+      "ingredients": "mozzarella cheese, BBQ sauce, grilled chicken, red onions",
+      "price": 13.99,
       "image": "pizzasImages/p6.png"
     }
   ],
@@ -47,44 +47,44 @@
   "sides": [
     {
       "id": 7,
-      "name": "Fries",
-      "ingredients": "Potatoes Fries Classic",
-      "price": 15.59,
+      "name": "Regular Fries",
+      "ingredients": "potatoes, vegetable oil,salt",
+      "price": 2.99,
       "image": "sidesImages/f1.png"
     },
     {
       "id": 8,
-      "name": "Fries",
-      "ingredients": "Potatoes Fries Classic",
-      "price": 15.59,
+      "name": "Sweet Potato Fries",
+      "ingredients": "sweet potatoes, vegetable oil, salt",
+      "price": 3.99,
       "image": "sidesImages/f2.png"
     },
     {
       "id": 9,
-      "name": "Nachos",
-      "ingredients": "Potatoes Fries Classic",
-      "price": 15.59,
+      "name": "Loaded Nachos",
+      "ingredients": "tortilla chips, ground beef, cheddar cheese, sour cream, guacamole",
+      "price": 11.99,
       "image": "sidesImages/n1.png"
     },
     {
       "id": 10,
-      "name": "Wings",
-      "ingredients": "Classic Chicken Wings",
-      "price": 15.59,
+      "name": "Classic Buffalo Wings",
+      "ingredients": "chicken wings, butter, hot sauce, garlic powder",
+      "price": 8.99,
       "image": "sidesImages/w1.png"
     },
     {
       "id": 11,
-      "name": "Wings Fried",
-      "ingredients": "Chicken Wings Fried",
-      "price": 15.59,
+      "name": "BBQ Wings",
+      "ingredients": "chicken wings, BBQ sauce, brown sugar, paprika",
+      "price": 9.99,
       "image": "sidesImages/w3.png"
     },
     {
       "id": 12,
-      "name": "Wings BBQ",
-      "ingredients": "Classic Wings BBQ",
-      "price": 15.59,
+      "name": "Teriyaki Wings",
+      "ingredients": "chicken wings, soy sauce, brown sugar, garlic",
+      "price": 10.99,
       "image": "sidesImages/w2.png"
     }
   ],
