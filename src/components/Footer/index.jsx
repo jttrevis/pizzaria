@@ -3,6 +3,7 @@ import { Container, Content } from "./style";
 import jrLogo from "../../assets/logos/JuniorLogo1.png";
 import { AiFillCopyrightCircle } from "react-icons/ai";
 import { FaFacebookMessenger, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { RiMessengerLine } from "react-icons/ri";
 
 export const Footer = () => {
   return (
@@ -13,7 +14,7 @@ export const Footer = () => {
             <FaInstagram />
           </a>
           <a href="https://www.facebook.com/">
-            <FaFacebookMessenger />
+            <RiMessengerLine />
           </a>
           <a href="https://www.whatsapp.com/">
             <FaWhatsapp />
