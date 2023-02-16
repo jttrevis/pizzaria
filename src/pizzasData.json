@@ -46,42 +46,42 @@
 
   "sides": [
     {
-      "id": 1,
+      "id": 7,
       "name": "Fries",
       "ingredients": "Potatoes Fries Classic",
       "price": 15.59,
       "image": "sidesImages/f1.png"
     },
     {
-      "id": 2,
+      "id": 8,
       "name": "Fries",
       "ingredients": "Potatoes Fries Classic",
       "price": 15.59,
       "image": "sidesImages/f2.png"
     },
     {
-      "id": 3,
+      "id": 9,
       "name": "Nachos",
       "ingredients": "Potatoes Fries Classic",
       "price": 15.59,
       "image": "sidesImages/n1.png"
     },
     {
-      "id": 4,
+      "id": 10,
       "name": "Wings",
       "ingredients": "Classic Chicken Wings",
       "price": 15.59,
       "image": "sidesImages/w1.png"
     },
     {
-      "id": 5,
+      "id": 11,
       "name": "Wings Fried",
       "ingredients": "Chicken Wings Fried",
       "price": 15.59,
       "image": "sidesImages/w3.png"
     },
     {
-      "id": 6,
+      "id": 12,
       "name": "Wings BBQ",
       "ingredients": "Classic Wings BBQ",
       "price": 15.59,
@@ -91,21 +91,21 @@
 
   "drinks": [
     {
-      "id": 1,
+      "id": 13,
       "name": "Pepsi",
       "ingredients": "Pepsi 300ml",
       "price": 1.99,
       "image": "drinksImages/pepsi.png"
     },
     {
-      "id": 2,
+      "id": 14,
       "name": "Coca Cola",
       "ingredients": "Coca Cola 500ml",
       "price": 1.99,
       "image": "drinksImages/coca2.png"
     },
     {
-      "id": 3,
+      "id": 15,
       "name": "Coca Cola",
       "ingredients": "Coca Cola 300ml",
       "price": 1.99,
@@ -113,14 +113,14 @@
     },
 
     {
-      "id": 5,
+      "id": 16,
       "name": "Budweiser",
       "ingredients": "Budweiser 300ml Long Neck",
       "price": 3.99,
       "image": "drinksImages/bud.png"
     },
     {
-      "id": 6,
+      "id": 17,
       "name": "Heineken",
       "ingredients": "Heineken 300ml Long Neck",
       "price": 4.59,
