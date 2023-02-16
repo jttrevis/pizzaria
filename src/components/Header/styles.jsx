@@ -11,6 +11,14 @@ export const HeaderStyles = styled.header`
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
 
+  > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+  }
+
   > a > img {
     width: 60px;
     transition: all 0.5s;

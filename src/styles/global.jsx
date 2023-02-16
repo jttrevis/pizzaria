@@ -39,7 +39,7 @@ button {
 
 body{
   -webkit-font-smoothing: antialiased;
-  background-color: black;
+  background-color: #000;
 
 
 

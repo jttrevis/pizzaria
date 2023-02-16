@@ -1,11 +1,30 @@
 import styled from "styled-components";
-import bgImage from "../../assets/pizzas.jpg";
+import bgImage from "../../assets/pzz.png";
 export const Container = styled.main`
   display: grid;
-  background-image: url(${bgImage});
+  background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      #000000,
+      #000000d6,
+      #00000097,
+      rgba(0, 0, 0, 0)
+    ),
+    url(${bgImage});
   background-position: center;
   background-size: cover;
+
   background-attachment: fixed;
+  border-radius: 18px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: local;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
 `;
 
 export const Content = styled.div`
@@ -18,35 +37,10 @@ export const Content = styled.div`
   text-align: center;
 
   img {
-    width: 600px;
+    /* width: 600px;
     margin-right: 5rem;
     border-radius: 15px;
-    background: rgba(0, 0, 0, 0.3);
-
-    @-moz-keyframes spin {
-      from {
-        -moz-transform: rotate(0deg);
-      }
-      to {
-        -moz-transform: rotate(360deg);
-      }
-    }
-    @-webkit-keyframes spin {
-      from {
-        -webkit-transform: rotate(0deg);
-      }
-      to {
-        -webkit-transform: rotate(360deg);
-      }
-    }
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
+    background: rgba(0, 0, 0, 0.3); */
   }
 
   div {
@@ -115,5 +109,18 @@ export const Content = styled.div`
       display: flex;
       width: 100vw;
     }
+  }
+`;
+
+export const photoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  img {
+    position: relative;
+
+    0px;
+    background: #f9f9f9;
   }
 `;

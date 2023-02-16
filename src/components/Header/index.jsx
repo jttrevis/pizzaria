@@ -23,6 +23,11 @@ export const Header = () => {
       </Link>
 
       <nav>
+        <Badge badgeContent={qty} color="primary">
+          <Link to="/cart">
+            <ShoppingCartIcon sx={{ color: "white" }} />
+          </Link>
+        </Badge>
         <MobileMenu htmlFor="menu-toggle" onClick={handleOpenMenuMobile}>
           <p>Menu</p>
           <span></span>
@@ -44,15 +49,6 @@ export const Header = () => {
               Contact
             </Link>
           </li>
-          <Badge
-            onClick={handleOpenMenuMobile}
-            badgeContent={qty}
-            color="primary"
-          >
-            <Link to="/cart">
-              <ShoppingCartIcon />
-            </Link>
-          </Badge>
         </Menu>
       </nav>
     </HeaderStyles>
