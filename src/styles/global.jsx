@@ -28,13 +28,12 @@ export const GlobalStyle = createGlobalStyle`
   background: gold;
   }
 
-:root {
-  --primary-color: #D3C224;
-}
+
 
 
 button {
   cursor: pointer;
+  color: #000  !important;;
 }
 
 body{
