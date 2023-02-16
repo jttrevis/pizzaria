@@ -22,6 +22,31 @@ export const Content = styled.div`
     margin-right: 5rem;
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.3);
+
+    @-moz-keyframes spin {
+      from {
+        -moz-transform: rotate(0deg);
+      }
+      to {
+        -moz-transform: rotate(360deg);
+      }
+    }
+    @-webkit-keyframes spin {
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
   }
 
   div {

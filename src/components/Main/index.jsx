@@ -9,7 +9,7 @@ export const Main = () => {
     <Container>
       <Content>
         <InViewSection>
-          <img alt="pizzaphoto" src={pizzaMain}></img>
+          {/* <img alt="pizzaphoto" src={pizzaMain}></img> */}
         </InViewSection>
         <InViewSection>
           <div id="main">
