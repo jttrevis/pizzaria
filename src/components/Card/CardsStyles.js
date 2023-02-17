@@ -11,7 +11,7 @@ export const Container = styled.div`
 export const Cards = styled.div`
   background-color: #000000;
   border-radius: 1rem;
-  border: #212121 0.2rem solid;
+  border: rgb(212, 172, 13, 0.2) 0.2rem solid;
   transition: all 0.4s ease-in;
   text-align: center;
   width: 300px;

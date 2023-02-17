@@ -62,6 +62,8 @@ export const Container = styled.div`
     background-color: gold;
     border-radius: 10px;
     transition: filter 0.3s;
+    border: none;
+    margin-top: 10px;
     &:hover {
       filter: brightness(0.7);
     }
