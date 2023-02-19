@@ -5,7 +5,9 @@ export const Container = styled.div`
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 1.3rem;
+  max-width: 900px;
+  margin: 0 auto;
 `;
 
 export const Cards = styled.div`
@@ -14,7 +16,10 @@ export const Cards = styled.div`
   border: rgb(212, 172, 13, 0.2) 0.2rem solid;
   transition: all 0.4s ease-in;
   text-align: center;
-  width: 300px;
+
+  width: 250px;
+  height: 100%;
+
   color: #fff;
   box-shadow: 0.4rem 0.4rem 0.6rem #00000040;
 
@@ -22,7 +27,7 @@ export const Cards = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 6px;
     align-items: center;
 
     h1 {
@@ -31,6 +36,7 @@ export const Cards = styled.div`
     }
 
     p {
+      height: 111px;
       font-size: 1.5rem;
     }
   }
@@ -39,13 +45,14 @@ export const Cards = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 6px;
   }
 
   img {
     object-fit: cover;
     width: 100%;
-    height: 250px;
+    height: 150px;
+    max-width: 150px;
   }
 
   &:hover {
@@ -55,11 +62,11 @@ export const Cards = styled.div`
   }
 
   button {
-    padding: 0.6rem 2rem;
+    padding: 0.6rem 1rem;
     border-radius: 15px;
     background: gold;
     font-size: 1.3rem;
-    margin: 1rem;
+    margin: 0.5rem;
     border: none;
     font-weight: bold;
     transition: all 0.3s;

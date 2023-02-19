@@ -5,21 +5,21 @@
       "name": "Margherita Pizza",
       "ingredients": "mozzarella cheese, tomato sauce, fresh basil",
       "price": 10.99,
-      "image": "pizzasImages/p1.png"
+      "image": "pizzasImages/p6.png"
     },
     {
       "id": 2,
       "name": "Pepperoni Pizza",
       "ingredients": "mozzarella cheese, tomato sauce,pepperoni",
       "price": 12.99,
-      "image": "pizzasImages/p2.png"
+      "image": "pizzasImages/p3.png"
     },
     {
       "id": 3,
       "name": "Vegetarian Pizza",
       "ingredients": "mozzarella cheese, tomato sauce, mushrooms, green peppers, onions",
       "price": 11.99,
-      "image": "pizzasImages/p3.png"
+      "image": "pizzasImages/p1.png"
     },
     {
       "id": 4,
@@ -40,7 +40,7 @@
       "name": "BBQ Chicken Pizza",
       "ingredients": "mozzarella cheese, BBQ sauce, grilled chicken, red onions",
       "price": 13.99,
-      "image": "pizzasImages/p6.png"
+      "image": "pizzasImages/p2.png"
     }
   ],
 
@@ -68,7 +68,7 @@
     },
     {
       "id": 10,
-      "name": "Classic Buffalo Wings",
+      "name": "Buffalo Wings",
       "ingredients": "chicken wings, butter, hot sauce, garlic powder",
       "price": 8.99,
       "image": "sidesImages/w1.png"
