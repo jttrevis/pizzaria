@@ -1,16 +1,22 @@
-import { Container } from "./CartStyles";
-
 import {
   AiOutlineShopping,
   AiOutlinePlusCircle,
   AiOutlineMinusCircle,
 } from "react-icons/ai";
-import { TiDeleteOutline } from "react-icons/ti";
-import { useStateContext } from "../context/StateContext";
 
-export const Cart = () => {
-  const { totalPrice, totalQuantities, cartItems, onRemove, onAdd } =
-    useStateContext();
+import { TiDeleteOutline } from "react-icons/ti";
+import { Container } from "./CartStyles";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContex";
+
+const formatter = new Intl.NumberFormat("en-GB", {
+  style: "currency",
+  currency: "GBP",
+});
+
+export const Cart = ({ image }) => {
+  const { cartItems, addToCart, removeFromCart, totalItems, totalPrice } =
+    useContext(CartContext);
 
   const itemCount = (id) => {
     return cartItems.reduce((total, item) => {
@@ -26,46 +32,42 @@ export const Cart = () => {
       <AiOutlineShopping size={50} />
       <h1>Your Cart</h1>
       {cartItems.map((item, index) => (
-        <div className="item-container" key={index}>
-          <div className="item-cart">
-            <img src={item.image} alt={item.name} />
-          </div>
-          <div className="item-text">
-            <h3>{item.name}</h3>
-            <h4>£{item.price}</h4>
-            <div>
-              <AiOutlineMinusCircle
-                size={30}
-                color="gold"
-                onClick={() => onRemove(item)}
-              ></AiOutlineMinusCircle>
-
-              <AiOutlinePlusCircle
-                size={30}
-                color="gold"
-                onClick={() => onAdd(item)}
-              ></AiOutlinePlusCircle>
+        <>
+          <div className="item-container" key={index}>
+            <div className="item-cart">
+              <img src={item.image} alt={item.name} />
             </div>
-            <span>
-              Qty:<span>{itemCount(item.id)}</span>{" "}
-            </span>
+            <div className="item-text">
+              <h3>{item.name}</h3>
+              <h4>{formatter.format(item.price)}</h4>
+              <div>
+                <AiOutlineMinusCircle
+                  size={30}
+                  color="gold"
+                  onClick={() => removeFromCart(item.id)}
+                ></AiOutlineMinusCircle>
+
+                <AiOutlinePlusCircle
+                  size={30}
+                  color="gold"
+                  onClick={() => addToCart(item)}
+                ></AiOutlinePlusCircle>
+              </div>
+              <span>
+                Qty:<span>{itemCount(item.id)}</span>{" "}
+              </span>
+            </div>
+            <button className="remove" onClick={() => removeFromCart(item)}>
+              <TiDeleteOutline size={30} />
+            </button>
           </div>
-          <button className="remove" onClick={() => onRemove(item)}>
-            <TiDeleteOutline size={30} />
-          </button>
-        </div>
+        </>
       ))}
       <div className="total">
-        <h4>Qty: ({totalQuantities})</h4>
+        <h4>Qty: ({totalItems})</h4>
       </div>
       <div className="total">
-        <h3>
-          Subtotal:{" "}
-          {new Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "GBP",
-          }).format(totalPrice)}
-        </h3>
+        <h3>Subtotal:({formatter.format(totalPrice)})</h3>
       </div>
       <button className="btn-checkout">Checkout</button>
     </Container>

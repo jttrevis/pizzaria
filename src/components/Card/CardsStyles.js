@@ -17,7 +17,7 @@ export const Cards = styled.div`
   transition: all 0.4s ease-in;
   text-align: center;
 
-  width: 250px;
+  width: 222px;
   height: 100%;
 
   color: #fff;
@@ -31,21 +31,14 @@ export const Cards = styled.div`
     align-items: center;
 
     h1 {
-      font-size: 2rem;
+      font-size: 1.4rem;
       padding: 12px 0;
     }
 
     p {
-      height: 111px;
-      font-size: 1.5rem;
+      height: 40px;
+      font-size: 1rem;
     }
-  }
-
-  > div > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
   }
 
   img {
@@ -65,7 +58,7 @@ export const Cards = styled.div`
     padding: 0.6rem 1rem;
     border-radius: 15px;
     background: gold;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 0.5rem;
     border: none;
     font-weight: bold;

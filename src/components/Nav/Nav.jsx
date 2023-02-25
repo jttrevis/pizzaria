@@ -3,7 +3,7 @@ import { Navbar } from "./NavStyles";
 
 import pizzaLogo from "../../assets/logos/pizza.svg";
 import friesLogo from "../../assets/logos/fries.svg";
-import drinkLogo from "../../assets/logos/drink.svg";
+import drinkLogo from "../../assets/logos/soda.png";
 
 export const Nav = () => {
   return (

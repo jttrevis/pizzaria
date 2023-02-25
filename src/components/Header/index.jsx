@@ -1,15 +1,15 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, useContext } from "react";
 import { HeaderStyles, MobileMenu, Menu } from "./styles";
 
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logos/logoPizza.png";
-import { useStateContext } from "../../context/StateContext";
 
 import { Badge } from "@mui/material";
+import { CartContext } from "./../../context/CartContex";
 
 export const Header = () => {
-  const { qty } = useStateContext();
+  const { totalItems } = useContext(CartContext);
 
   const [menuMobile, setMenuMobile] = useState(false);
 
@@ -23,7 +23,7 @@ export const Header = () => {
       </Link>
 
       <nav>
-        <Badge badgeContent={qty} color="primary">
+        <Badge badgeContent={totalItems} color="primary">
           <Link to="/cart">
             <ShoppingCartIcon sx={{ color: "white" }} />
           </Link>

@@ -8,7 +8,7 @@ import { Video } from "../components/Video";
 export const Home = () => {
   return (
     <>
-      <Toaster />
+      <Toaster position="bottom-right" reverseOrder={false} />
 
       <Main />
 

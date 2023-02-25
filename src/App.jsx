@@ -3,17 +3,17 @@ import { Home } from "./pages/Home";
 import { GlobalStyle } from "./styles/global";
 import { MenuPage } from "./pages/MenuPage";
 import { Contact } from "./pages/Contact";
-import { StateContext } from "./context/StateContext";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header/index";
 import { Cart } from "./pages/Cart";
 import { BackToTopButton } from "./components/BackToTopButton/BackToTopButton";
 import { Footer } from "./components/Footer";
+import { CartProvider } from "./context/CartContex";
 
 function App() {
   return (
-    <StateContext>
+    <CartProvider>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -26,7 +26,7 @@ function App() {
         <GlobalStyle />
         <Footer />
       </BrowserRouter>
-    </StateContext>
+    </CartProvider>
   );
 }
 
