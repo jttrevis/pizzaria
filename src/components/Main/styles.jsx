@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bgImage from "../../assets/pzz.png";
+import bgImage from "../../assets/pzz1.jpg";
 export const Container = styled.main`
   display: grid;
   background-image: linear-gradient(
@@ -22,7 +22,7 @@ export const Container = styled.main`
     justify-content: center;
     align-items: center;
     background-attachment: local;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
   }
 `;
