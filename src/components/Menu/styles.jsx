@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   text-align: center;
-  background: black;
-  color: white;
+
+  color: black;
   margin: 0;
 
   h3 {
@@ -12,12 +12,13 @@ export const Container = styled.div`
   }
 
   a {
-    color: gold;
+    color: whitesmoke;
     transition: all 0.5s;
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid whitesmoke;
 
     &:hover {
-      filter: brightness(0.5);
+      color: black;
+      border-bottom: 2px solid black;
     }
   }
 

@@ -19,7 +19,7 @@ export const Header = () => {
   return (
     <HeaderStyles>
       <Link to="/">
-        <img src={logo} alt="" />
+        <img src={logo} alt="logo" />
       </Link>
 
       <nav>

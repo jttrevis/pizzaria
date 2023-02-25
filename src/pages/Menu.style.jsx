@@ -9,7 +9,7 @@ export const Content = styled.div`
   border-bottom: 1px solid gold;
 
   > h1 {
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;

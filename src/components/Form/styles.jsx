@@ -54,7 +54,7 @@ export const FormContainer = styled.form`
     }
   }
   > div {
-    color: gold;
+    color: black;
     padding: 5rem;
     display: flex;
     flex-direction: column;
