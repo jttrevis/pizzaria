@@ -36,7 +36,7 @@ export const Cards = styled.div`
     }
 
     p {
-      height: 40px;
+      height: 60px;
       font-size: 1rem;
     }
   }
