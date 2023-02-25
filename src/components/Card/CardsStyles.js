@@ -49,7 +49,7 @@ export const Cards = styled.div`
   }
 
   &:hover {
-    transform: translateY(-1.5rem);
+    transform: translateY(-1rem);
     border: gold 0.2em solid;
     border-radius: 2.5rem 0 2.5rem 0;
   }
