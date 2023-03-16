@@ -1,4 +1,4 @@
-# IS LIVE NOW : [Pizzaria Trevisol](https://pizzaria-trevisol.vercel.app/)
+# IS LIVE NOW : [Pizzaria Shop](https://pizzaria-trevisol.vercel.app/)
 
 
 
