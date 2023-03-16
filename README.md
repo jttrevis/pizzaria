@@ -1,6 +1,6 @@
 # IS LIVE NOW : [Pizzaria Shop](https://pizzaria-trevisol.vercel.app/)
 
-
+![pizza](https://user-images.githubusercontent.com/105820012/225731626-e81e3ea1-d277-4f41-973d-aae4422c0e5f.png)
 
 ## About
 
