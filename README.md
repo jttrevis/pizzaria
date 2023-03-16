@@ -32,7 +32,7 @@ Here are the technologies used in this project.
 # WebSite
 
  >## Home:
-  ![Homepage image](https://github.com/jttrevis/pizzaria/blob/main/public/home.png)
+  ![pizza](https://user-images.githubusercontent.com/105820012/225730079-979dff89-72bb-4bd1-8ac4-81fb76490f97.png)
 
 
  >## Menu Page:
