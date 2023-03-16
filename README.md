@@ -32,18 +32,18 @@ Here are the technologies used in this project.
 # WebSite
 
  >## Home:
-  ![pizza](https://user-images.githubusercontent.com/105820012/225730079-979dff89-72bb-4bd1-8ac4-81fb76490f97.png)
+  ![screencapture-pizzaria-trevisol-vercel-app-2023-03-16-19_20_08](https://user-images.githubusercontent.com/105820012/225731001-8c592848-6aff-4f25-91b2-acf82c455ae0.png)
+
 
 
  >## Menu Page:
-  ![Menupage image](https://github.com/jttrevis/pizzaria/blob/main/public/menu.png)
+  ![screencapture-pizzaria-trevisol-vercel-app-menu-2023-03-16-19_19_38](https://user-images.githubusercontent.com/105820012/225730995-4ebc9400-2ab7-458b-8ef4-c0196e053dde.png)
 
 
  >## Contact Page:
-  ![Contactpage image](https://github.com/jttrevis/pizzaria/blob/main/public/contact.png)
+  ![screencapture-pizzaria-trevisol-vercel-app-contact-2023-03-16-19_20_20](https://user-images.githubusercontent.com/105820012/225731009-d87ec2d8-7b94-4713-988b-06fa716e15ed.png)
 
- >## Cart Modal Page:
-  ![CartModalPage image](https://github.com/jttrevis/pizzaria/blob/main/public/cartpage.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
