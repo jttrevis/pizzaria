@@ -1,6 +1,6 @@
 # IS LIVE NOW : [Pizzaria Trevisol](https://pizzaria-trevisol.vercel.app/)
 
-![Logo of the project](https://github.com/jttrevis/pizzaria/blob/main/src/assets/logo-no-background.png)
+
 
 ## About
 
