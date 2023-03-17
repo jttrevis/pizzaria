@@ -32,23 +32,20 @@ export const CartProvider = ({ children }) => {
   };
 
   const removeFromCart = (itemId) => {
-    const existingItemIndex = cartItems.findIndex(
-      (cartItem) => cartItem.id === itemId
-    );
+    const existingItem = cartItems.find((cartItem) => cartItem.id === itemId);
 
-    if (existingItemIndex !== -1) {
-      const existingItem = cartItems[existingItemIndex];
-
-      if (existingItem.quantity === 1) {
-        setCartItems(cartItems.filter((item) => item.id !== itemId));
-      } else {
-        const newCartItems = [...cartItems];
-        newCartItems[existingItemIndex].quantity--;
-        setCartItems(newCartItems);
-      }
-
-      setTotalItems(totalItems - 1);
-      setTotalPrice(totalPrice - existingItem.price);
+    if (existingItem && existingItem.quantity > 1) {
+      setCartItems((prevCartItems) =>
+        prevCartItems.map((cartItem) =>
+          cartItem.id === itemId
+            ? { ...cartItem, quantity: cartItem.quantity - 1 }
+            : cartItem
+        )
+      );
+    } else {
+      setCartItems((prevCartItems) =>
+        prevCartItems.filter((cartItem) => cartItem.id !== itemId)
+      );
     }
   };
 
