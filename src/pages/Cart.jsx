@@ -15,7 +15,7 @@ const formatter = new Intl.NumberFormat("en-GB", {
   currency: "GBP",
 });
 
-export const Cart = ({ image }) => {
+export const Cart = () => {
   const {
     cartItems,
     addToCart,
@@ -36,9 +36,11 @@ export const Cart = ({ image }) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+      initial={{ y: "-100%" }}
+      transition={{ duration: 0.5, delay: 0.3 }}
+      animate={{
+        y: "0",
+      }}
     >
       <Container>
         <AiOutlineShopping size={50} />

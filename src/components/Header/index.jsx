@@ -6,6 +6,7 @@ import { CartContext } from "./../../context/CartContex";
 import logo from "../../assets/logos/logoPizza.png";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 export const Header = () => {
   const { totalItems } = useContext(CartContext);
@@ -32,30 +33,18 @@ export const Header = () => {
     transition: "background-color 0.3s ease-in-out",
   };
 
-  const menuMobileStyle = {
-    transition: "transform 0.3s ease-in-out",
-  };
-
-  const menuStyle = {
-    transition: "opacity 0.3s ease-in-out",
-  };
-
   return (
     <HeaderStyles style={navbarStyle}>
       <Link to="/">
         <img src={logo} alt="logo" />
       </Link>
       <nav>
-        <MobileMenu
-          style={menuMobileStyle}
-          htmlFor="menu-toggle"
-          onClick={handleOpenMenuMobile}
-        >
+        <MobileMenu htmlFor="menu-toggle" onClick={handleOpenMenuMobile}>
           <p>Menu</p>
           <span></span>
         </MobileMenu>
 
-        <Menu id="menu-toggle" isOpen={menuMobile} style={menuStyle}>
+        <Menu id="menu-toggle" isOpen={menuMobile}>
           <li>
             <Link onClick={handleOpenMenuMobile} to="/">
               Home
