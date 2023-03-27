@@ -60,12 +60,8 @@ export const Header = () => {
               Contact
             </Link>
           </li>
-          <Link to="/cart">
-            <Badge
-              badgeContent={totalItems}
-              color="primary"
-              onClick={handleOpenMenuMobile}
-            >
+          <Link to="/cart" onClick={handleOpenMenuMobile}>
+            <Badge badgeContent={totalItems} color="primary">
               <ShoppingCartIcon />
             </Badge>
           </Link>

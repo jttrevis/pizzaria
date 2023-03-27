@@ -16,7 +16,7 @@ export const Navbar = styled.nav`
   border-radius: 3rem;
   backdrop-filter: blur(15px);
 
-  a {
+  > a {
     color: #7c00b6;
     padding: 0.5rem;
     border-radius: 50%;
@@ -26,7 +26,7 @@ export const Navbar = styled.nav`
     cursor: pointer;
     transition: all 0.2s;
 
-    img {
+    > img {
       width: 25px;
     }
 

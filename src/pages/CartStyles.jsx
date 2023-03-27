@@ -24,7 +24,7 @@ export const Container = styled.div`
     gap: 0.5rem;
     padding: 1rem 0;
   }
-  img {
+  > img {
     display: flex;
 
     width: 150px;

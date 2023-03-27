@@ -83,7 +83,7 @@ export const Content = styled.div`
     align-items: center;
     margin: 6rem auto;
 
-    img {
+    > img {
       display: none;
     }
 
