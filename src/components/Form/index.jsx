@@ -1,10 +1,15 @@
 import React from "react";
 
 import { Content, FormContainer } from "./styles";
+import { motion } from "framer-motion";
 
 export const Form = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8, delay: 0.8 }}
+    >
       <FormContainer>
         <form>
           <label>Name</label>
@@ -31,6 +36,6 @@ export const Form = () => {
           ></iframe>
         </div>
       </Content>
-    </>
+    </motion.div>
   );
 };

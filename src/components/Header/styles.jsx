@@ -6,28 +6,27 @@ export const HeaderStyles = styled.header`
   color: white;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
+
   z-index: 1000;
+
+  > a > img {
+    width: 100px;
+    transition: all 0.5s;
+    margin-left: 1.8rem;
+  }
 
   > nav {
     display: flex;
-    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
     text-decoration: none;
-  }
-
-  > a > img {
-    width: 60px;
-    transition: all 0.5s;
-    margin-left: 1.8rem;
-    height: 60px;
-
-    &:hover {
-      scale: 1.5;
-    }
+    margin-right: 2rem;
   }
 `;
 
@@ -66,15 +65,13 @@ export const Menu = styled.ul`
   gap: 0.5rem;
 
   a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
     border-radius: 0.5rem;
     color: white;
     transition: all 0.5s;
-
-    &:nth-child(3) {
-      padding: 0;
-    }
 
     &:hover {
       background-color: gold;
@@ -84,15 +81,13 @@ export const Menu = styled.ul`
 
   @media (max-width: 600px) {
     display: ${(props) => (props.isOpen ? "flex" : "none")};
-
     flex-direction: column;
     align-items: center;
-
     position: absolute;
     font-size: 1.7rem;
-    top: 4.7rem;
+    top: 8rem;
     left: 0;
-    /* background-color: rgba(0, 0, 0, 0.7); */
+
     background-color: #000;
     text-align: center;
     width: 100%;

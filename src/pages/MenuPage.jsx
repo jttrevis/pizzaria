@@ -7,10 +7,15 @@ import { Nav } from "../components/Nav/Nav";
 import { SidesCards } from "../components/Card/SidesCards";
 import { PizzasCard } from "./../components/Card/PizzasCards";
 import { DrinksCard } from "./../components/Card/DrinksCards";
+import { motion } from "framer-motion";
 
 export const MenuPage = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8, delay: 0.8 }}
+    >
       <Toaster position="bottom-right" reverseOrder={false} />
       <Container>
         <Content id="pizzas">
@@ -27,6 +32,6 @@ export const MenuPage = () => {
         </Content>
       </Container>
       <Nav />
-    </>
+    </motion.div>
   );
 };

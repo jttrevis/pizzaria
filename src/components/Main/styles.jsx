@@ -15,7 +15,6 @@ export const Container = styled.main`
   background-size: cover;
 
   background-attachment: fixed;
-  border-radius: 18px;
 
   @media (max-width: 768px) {
     display: flex;

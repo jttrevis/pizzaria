@@ -1,5 +1,5 @@
 import React from "react";
-import InViewSection from "../inViewSection/inViewSection";
+import { InViewSection } from "../inViewSection/inViewSection";
 import { Container, Content } from "./styles";
 
 export const Video = () => {

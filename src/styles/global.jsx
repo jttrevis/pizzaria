@@ -17,16 +17,19 @@ export const GlobalStyle = createGlobalStyle`
 ::-webkit-scrollbar {
   width:10px;
   height: 10px;
+  border-radius: 10px;
 
   }
 
 ::-webkit-scrollbar-track {
   background: #111;
+
   }
 
 ::-webkit-scrollbar-thumb {
 
   background: gold;
+  border-radius: 10px;
   }
 
 

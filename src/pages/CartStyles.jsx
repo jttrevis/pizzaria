@@ -4,20 +4,30 @@ export const Container = styled.div`
   display: block;
   text-align: center;
   height: 100%;
-
-  background-color: black;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #000000e2;
   color: white;
   padding: 7rem 0;
 
   .item-cart {
     margin: 1rem;
     width: 150px;
-    border: 1px solid gold;
+
     border-radius: 15px;
+  }
+
+  .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
   }
   img {
     display: flex;
-    width: 100%;
+
+    width: 150px;
   }
   .item-container {
     display: flex;
