@@ -6,12 +6,12 @@ import { CartContext } from "./../../context/CartContex";
 import logo from "../../assets/logos/logoPizza.png";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useEffect } from "react";
-import { motion } from "framer-motion";
 
 export const Header = () => {
   const { totalItems } = useContext(CartContext);
   const [menuMobile, setMenuMobile] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
   const handleOpenMenuMobile = useCallback(() => {
     setMenuMobile(!menuMobile);
   }, [menuMobile]);
@@ -29,7 +29,7 @@ export const Header = () => {
   }, []);
 
   const navbarStyle = {
-    backgroundColor: scrolled ? "black" : "transparent",
+    backgroundColor: scrolled ? "#000000c8" : "transparent",
     transition: "background-color 0.3s ease-in-out",
   };
 

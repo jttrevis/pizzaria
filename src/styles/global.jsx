@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   text-decoration: none;
 
 
+
 }
 
 
@@ -43,7 +44,7 @@ button {
 body{
   -webkit-font-smoothing: antialiased;
   background-image: linear-gradient(to left bottom, #000000, #412123, #7f3d32, #b86434, #e39728, #bb7e23, #bd7e21, #e39728, #b86434, #7f3d32, #412123, #000000);
-
+  overflow-x: hidden;
 
 
 

@@ -23,11 +23,11 @@ export const PizzasCard = () => {
           <InViewSection>
             <Cards key={item.id}>
               <div>
-                <PrismicRichText field={item.data.item_name} />
                 <img
                   src={item.data.item_image.url}
                   alt={item.data.item_image.alt}
                 />
+                <PrismicRichText field={item.data.item_name} />
 
                 <PrismicRichText field={item.data.item_ingredients} />
               </div>

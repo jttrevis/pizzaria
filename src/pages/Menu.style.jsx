@@ -16,4 +16,27 @@ export const Content = styled.div`
     padding: 5rem;
     font-size: 3rem;
   }
+
+  h2 {
+    position: absolute;
+    color: #ffd9002d;
+    font-size: 7rem;
+    left: 150px;
+    z-index: -1;
+  }
+
+  h3 {
+    position: absolute;
+    color: #ffd9002d;
+    font-size: 7rem;
+    right: 150px;
+    z-index: -1;
+  }
+
+  @media (max-width: 768px) {
+    h2,
+    h3 {
+      display: none;
+    }
+  }
 `;

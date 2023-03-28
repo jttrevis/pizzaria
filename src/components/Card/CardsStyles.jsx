@@ -3,21 +3,25 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1.3rem;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 `;
 
 export const Cards = styled.div`
-  background-color: #000000;
-  border-radius: 1rem;
-  border: rgb(212, 172, 13, 0.2) 0.2rem solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  background: #141414fb;
+  z-index: 1;
   transition: all 0.4s ease-in;
   text-align: center;
 
-  width: 222px;
+  width: 250px;
   height: 100%;
 
   color: #fff;
@@ -38,6 +42,7 @@ export const Cards = styled.div`
     p {
       height: 60px;
       font-size: 1rem;
+      padding: 0 5px;
     }
   }
 
@@ -46,6 +51,7 @@ export const Cards = styled.div`
     width: 100%;
     height: 150px;
     max-width: 150px;
+    margin-top: 10px;
   }
 
   &:hover {
@@ -55,17 +61,26 @@ export const Cards = styled.div`
   }
 
   button {
-    padding: 0.6rem 1rem;
+    font-size: 17px;
+    background: #ccb911f9;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem 1.8rem;
     border-radius: 15px;
-    background: gold;
-    font-size: 1.1rem;
     margin: 0.5rem;
     border: none;
     font-weight: bold;
     transition: all 0.3s;
 
+    &:before {
+      content: "£";
+      margin-right: 5px;
+    }
+
     &:hover {
       filter: brightness(0.6);
+      color: gold;
     }
   }
 `;

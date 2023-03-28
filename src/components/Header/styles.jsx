@@ -8,7 +8,6 @@ export const HeaderStyles = styled.header`
   align-items: center;
   justify-content: center;
   padding: 1rem;
-
   z-index: 1000;
 
   > a > img {
@@ -64,6 +63,16 @@ export const Menu = styled.ul`
   display: flex;
   gap: 0.5rem;
 
+  display: flex;
+  align-items: center;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
   a {
     display: flex;
     align-items: center;
@@ -76,6 +85,7 @@ export const Menu = styled.ul`
     &:hover {
       background-color: gold;
       color: #000;
+      border-radius: 10px;
     }
   }
 
@@ -87,18 +97,20 @@ export const Menu = styled.ul`
     font-size: 1.7rem;
     top: 8rem;
     left: 0;
-
     background-color: #000;
     text-align: center;
     width: 100%;
     height: calc(100vh - 4.6875rem);
     z-index: 1;
+    transition: all 0.3s ease-in;
 
     a {
-      width: 100vw;
+      width: 100%;
+      max-width: 100px;
+
       padding: 1rem 0;
       margin-inline: 1rem;
-      border-bottom: 0.0625rem solid gold;
+
       border-radius: 0;
     }
   }

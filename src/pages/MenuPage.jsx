@@ -20,14 +20,42 @@ export const MenuPage = () => {
       <Container>
         <Content id="pizzas">
           <h1>Pizzas</h1>
+          <h2>
+            P<br />
+            i<br />z<br />z<br />a<br />s
+          </h2>
+
+          <h3>
+            P<br />
+            i<br />z<br />z<br />a<br />s
+          </h3>
+
           <PizzasCard />
         </Content>
         <Content id="sides">
           <h1>Sides</h1>
+          <h2>
+            S<br />
+            i<br />d<br />e<br />s
+          </h2>
+
+          <h3>
+            S<br />
+            i<br />d<br />e<br />s
+          </h3>
           <SidesCards />
         </Content>
         <Content id="drinks">
           <h1>Drinks</h1>
+          <h2>
+            D<br />
+            r<br />i<br />n<br />k<br />s
+          </h2>
+
+          <h3>
+            D<br />
+            r<br />i<br />n<br />k<br />s
+          </h3>
           <DrinksCard />
         </Content>
       </Container>
