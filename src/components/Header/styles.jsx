@@ -6,7 +6,7 @@ export const HeaderStyles = styled.header`
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1rem;
   z-index: 1000;
 
@@ -17,15 +17,10 @@ export const HeaderStyles = styled.header`
   }
 
   > nav {
-    display: flex;
-    max-width: 1440px;
-    margin: 0 auto;
     font-size: 1.5rem;
-    justify-content: space-between;
-    align-items: center;
+
     gap: 1rem;
     text-decoration: none;
-    margin-right: 2rem;
   }
 `;
 

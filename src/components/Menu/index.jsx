@@ -11,7 +11,6 @@ import {
 } from "@prismicio/react";
 import { CartContext } from "../../context/CartContex";
 import { motion } from "framer-motion";
-import { ParallaxText } from "./../ParallaxText/index";
 
 export const Menu = () => {
   const [document] = useAllPrismicDocumentsByType("offers");
@@ -25,7 +24,6 @@ export const Menu = () => {
     >
       <Container id="menu">
         <div className="text-mid">
-          <ParallaxText>Offers</ParallaxText>
           <h3>Offers</h3>
         </div>
         <div>
